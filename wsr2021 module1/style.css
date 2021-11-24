@@ -1,0 +1,344 @@
+/*Подключение шрифта
+==========================*/
+@font-face {
+	src: url("Montserrat-Light.ttf");
+	font-family:  Montserrat;
+}
+
+/*Основные цвета
+
+тёмный 			#100e19
+контрастный 	#ea0042
+промежуточный 	#1f1b2e
+белый 			white|#fff|#ffffff
+серый 			gray|etc.
+
+*/
+
+/*Общие стили
+==========================*/
+* {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Montserrat;
+}
+
+a {
+	color:  white;
+	text-decoration: none;
+	transform: .2s;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin:  5px 0;
+}
+
+input {
+	width:  100%;
+	height:  50px;
+	margin:  10px 0;
+	font-size:  14pt;
+	font-family: Montserrat;
+	border:  solid 1px black;
+	border-radius:  5px;
+	padding-left:  10px;
+}
+
+input[type=button] {
+	border:  solid 1px #ea0042;
+	color:  #ea0042;
+	cursor:  pointer;
+	background-color: #100e19;
+}
+
+input[type=button]:active {
+	border:  solid 2px #ea0042;
+}
+
+input[type=checkbox] {
+	margin:  0;
+	width:  20px;
+	height:  20px;
+}
+
+img {
+	max-width:  100%;
+}
+
+form {
+	margin:  0 auto;
+	width: 60%;
+	text-align: center;
+}
+
+table {
+	width:  100%;
+	text-align:  center;
+	margin:  20px auto;
+	font-size:  14pt;
+	color:  #ea0042;
+	border-top:  solid 1px #ea0042;
+}
+
+th, td {
+	padding: 10px;
+	border-bottom:  solid 1px #ea0042;
+}
+
+table input {
+	margin:  0;
+	height: 40px;
+	width: 300px;
+}
+
+div.content {
+	max-width:  1200px;
+	min-height:  100%;
+	margin:  0 auto;
+}
+
+div.wrap {
+	padding: 40px 0;
+}
+
+.dark {
+	background-color:  #100e19;
+}
+
+.metal {
+	background-color:  #1f1b2e;
+}
+
+.red {
+	color:  #ea0042;
+}
+
+div.head {
+	text-align: center;
+	padding:  20px 0;
+	margin-bottom:  10px;
+	font-size: 24pt;
+	color:  white;
+}
+
+div.full {
+	min-height: calc(100vh - 254px);
+}
+
+div.wrapper {
+	margin:  20px 0;
+	padding:  20px;
+	border-radius: 10px;
+}
+
+/*Стили шапки
+==========================*/
+header, footer {
+	background-color:  #100e19;
+	padding:  20px 0;
+	color:  white;
+}
+
+header div.wrap_header {
+	display:  flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header div.logo {
+	font-size:  20pt;
+}
+
+header nav a {
+	padding: 0 5px;
+}
+
+/*Стили банера
+==========================*/
+div.banner {
+	background-image:  url("images/banner.jpeg");
+	background-size:  100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:  600px;
+}
+
+div.banner div.mask {
+	position: absolute;
+	width:  100%;
+	height:  600px;
+	background-color:  rgba(0,0,0,0.5);
+}
+
+div.banner div.content {
+	display: flex;
+	flex-wrap:  wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+div.banner div.center {
+	z-index: 1;
+	font-size:  28pt;
+	padding:  20px 0;
+	color:  #eee;
+	border-radius: 50px;
+}
+
+/*Стили описания
+==========================*/
+div.description h3 {
+	text-align:  center;
+	color:  white;
+}
+
+div.description div.data {
+	display:  flex;
+	justify-content: space-between;
+	flex-wrap:  wrap;
+	margin-top:  20px;
+}
+
+div.description div.button {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+div.description div.data input,
+div.description div.button input {
+	width: 32%;
+}
+
+div.description div.image {
+	margin:  0px auto 40px;
+	width:  80%;
+}
+
+/*Стили доверия
+==========================*/
+div.confidence div.review {
+	background-color:  #100e19;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	padding:  20px;
+	color:  white;
+	margin: 20px 0;
+	border-radius:  10px;
+}
+
+div.confidence div.review h3 {
+	color:  #ea0042;
+}
+
+div.confidence div.row {
+	display:  flex;
+	flex-wrap:  wrap;
+	justify-content: space-between;
+}
+
+div.confidence div.row div.review {
+	width:  30%;
+}
+
+/*Стили акций
+==========================*/
+
+div.stock div.head {
+	color: #100e19;
+}
+
+div.stock div.promotions {
+	display:  flex;
+	flex-wrap:  wrap;
+	justify-content: space-between;
+	margin:  20px 0;
+}
+
+div.stock div.promotions div.promo {
+	width: 24%;
+	padding:  10px;
+	color:  white;
+	background-color:  #100e19;
+	border-radius:  10px;
+}
+
+div.stock div.promotions div.promo img {
+	width: 100%;
+	height:  200px;
+	object-fit: cover;
+}
+
+div.stock div.promotions div.promo h3 {
+	margin: 10px 0;
+	text-align:  center;
+}
+
+div.stock div.promotions div.promo p {
+	text-align: justify;
+}
+
+/*Стили подвала
+==========================*/
+footer {
+	text-align:  center;
+}
+
+footer h1 {
+	font-size:  50pt;
+	padding:  20px 0;
+}
+
+footer a {
+	padding:  0 5px;
+}
+
+/*Стили страницы личного кабинета
+==========================*/
+div.profile {
+	font-size:  16pt;
+}
+
+div.profile td, div.profile th {
+	background-color:  #100e19;
+}
+
+/*Стили страницы выбора места
+==========================*/
+div.seat {
+	font-size:  16pt;
+}
+
+div.seat td {
+	cursor: pointer;
+	padding:  10px 20px;
+}
+
+div.seat td:hover {
+	transform: scale(1.1);
+	background-color:  #1f1b2e;
+}
+
+/*Стили для страницы бронирования
+==========================*/
+div.booking input {
+	color :  #ea0042;
+}
+
+div.booking input::placeholder {
+	color:  #ea0042;
+	opacity: 0.5;
+}
+
+/*Стили для управления бронированием
+==========================*/
+div.booking_management p {
+	font-size:  16pt;
+}

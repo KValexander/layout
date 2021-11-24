@@ -1,0 +1,328 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+}
+
+a {
+	color: black;
+	cursor: pointer;
+	text-decoration: none;
+	transition: .2s;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+}
+
+input, select, textarea {
+	width: 100%;
+	height: 60px;
+	font-size: 16pt;
+	font-family: Arial;
+	margin: 10px 0;
+	border: solid 1px black;
+	padding-left: 10px;
+	transition: .2s;
+}
+
+input[type=button] {
+	background-color: gray;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	position: relative;
+	top: 3px;
+}
+textarea {
+	border-radius: 5px;
+	padding: 10px;
+	min-height: 100px;
+}
+
+input[type=button]:hover {
+	background-color: #ba5536;
+}
+
+div.wrapper {
+	padding: 20px 0;
+}
+
+div.content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 40px 0;
+}
+
+div.wrap_head {
+	text-align: center;
+}
+div.head {
+	background-color: gray;
+	color: white;
+	font-size: 20pt;
+	display: inline-block;
+	vertical-align: top;
+}
+div.head h2 {
+	position: relative;
+	font-style: italic;
+	top: -15px;
+	left: -15px;
+}
+div.part {
+	display: flex;
+	justify-content: space-between;
+}
+
+div.part input, div.part select {
+	width: 49%;
+}
+
+header {
+	background-color: black;
+}
+
+header div.content {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header div.logo {
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+header a {
+	color: white;
+}
+
+header nav a {
+	padding: 0 10px;
+}
+
+section.banner {
+	min-height: 600px;
+	background-image: url("images/banner2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+section.algorithm {
+	background-color: black;
+}
+
+section.algorithm div.steps {
+	display: flex;
+	margin-top: 50px;
+	justify-content: space-between;
+}
+
+section.algorithm div.step {
+	display: flex;
+	margin: 10px 0;
+	justify-content: center;
+	align-items: center;
+	font-size: 20pt;
+	background-color: #ba5536;
+	width: 19%;
+	height: 80px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	color: white;
+	padding: 10px 20px;
+}
+
+section.about {
+	background-color: #ba5536;
+	font-style: italic;
+}
+
+section.about div.part {
+	margin: 60px 0;
+	font-size: 20pt;
+	color: white;
+}
+
+section.about div.review {
+	margin: 20px 0;
+	padding: 20px;
+	font-size: 16pt;
+	display: flex;
+	text-align: right;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+
+section.about div.review img {
+	height: 100px;
+}
+
+section.search {
+	background-color: black;
+}
+
+section.search div.form {
+	margin-top: 50px;
+	color: white;
+}
+
+section.promotion h2 {
+	color: black;
+}
+
+section.promotion div.promos, section.seat div.details{
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section.promotion div.promo, section.seat div.detail {
+	width: 33.333333%;
+	font-size: 14pt;
+	border-top: solid 5px #ba5536;
+	border-bottom: solid 5px #ba5536;
+}
+
+section.promotion div.promo p, section.seat div.details p {
+	text-align: justify;
+}
+
+section.promotion div.promo img {
+	object-fit: cover;
+	height: 300px;
+}
+section.promotion div.promo div.text, section.seat div.details div.text {
+	padding: 10px;
+}
+
+section.promotion div.promo input, section.seat div.details {
+	margin-bottom: 0;
+}
+
+section.subscribe {
+	background-color: #ba5536;
+}
+
+section.subscribe div.form {
+	margin-top: 40px;
+}
+
+/*Секции других страниц*/
+/*search.html*/
+section.result h2{
+	color: black;
+}
+
+section.result div.information {
+	font-size: 14pt;
+	margin: 60px 0;
+}
+
+section.result div.information h3 {
+	font-size: 20pt;
+	font-style: italic;
+	padding: 0;
+}
+
+section.result	div.results {
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+}
+
+section.result div.results div.result {
+	width: 24%;
+	padding: 20px;
+	border-radius: 25px;
+	background-color: #ba5536;
+	line-height: 30px;
+	color: white;
+}
+
+section.result div.results div.result ul {
+	margin-left: 50px;
+}
+
+section.result div.results div.result input {
+	height: 50px;
+	border-radius: 25px;
+}
+.ul {
+	list-style: none;
+}
+.ul li {
+	overflow: hidden;
+	padding: 6px 10px;
+	font-size: 20px;
+}
+.ul li:first-child {
+	font-weight: bold;
+	padding: 15px 0 10px 15px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0, .2);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: #ba5536;
+	font-size: 24px;
+	box-shadow: 0 10px 20px -5px rgba(0,0,0, .2);
+}
+
+/*seat.html*/
+section.seat div.map {
+	height: 800px;
+	margin: 40px 0;
+	background-image: url("images/map.png");
+	background-size: 100% 100%;
+	background-position: center;
+}
+section.seat h2{
+	color: black;
+}
+
+/*booking.html*/
+section.booking h2 {
+	color: black;
+}
+
+/*=========================*/
+
+footer {
+	padding: 20px 0;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+footer h1 {
+	font-size: 50pt;
+	margin-bottom: 20px;
+}
+
+footer a {
+	color: white;
+}

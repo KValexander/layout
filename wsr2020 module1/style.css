@@ -1,0 +1,798 @@
+
+@font-face {
+	font-family: Montserrat-Light;
+	src: url("fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+	font-family: Montserrat-Regular;
+	src: url("fonts/Montserrat-Regular.ttf");
+}
+
+* {margin: 0px; padding: 0px;}
+
+body {
+	position: relative;
+	width: 100%;
+	font-family: Montserrat-Regular;
+}
+
+.content {width: 100%;}
+
+h1 {font-size: 36pt;}
+
+a {text-decoration: none}
+
+a:hover {text-decoration: underline;}
+
+input {
+	font-family: Montserrat-Light;
+	border-radius: 5px;
+}
+
+table {
+	font-family: Montserrat-Light;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 14pt;
+}
+
+table tr th {
+	padding: 10px;
+}
+
+table tr td {
+	border-bottom: 1px solid #333;
+	height: 50px;
+}
+
+section#error div.content{
+	width: 100%;
+	height: 90vh;
+	margin: 0 auto;
+	background-image: url("images/background.jpg");
+	background-size: 100% 100%;
+}
+
+section#error div.content h1 {
+	padding: 7% 30px 10px 30px;
+	margin-left: 10%;
+	font-size: 90pt;
+}
+
+section#error div.content h3 {
+	padding-left: 30px;
+	font-size: 40pt;
+	margin-left: 10%;
+}
+
+section#error div.content h4 {
+	padding-left: 30px;
+	padding-top: 30px;
+	margin-left: 10%;
+	font-size: 14pt;
+	margin-top: 10px;
+}
+
+/*-------------------------
+----Начало css Header----
+------------------------*/
+
+header#main div.content {
+	height: 75vh;
+	background: url("images/1.jpg");
+	background-size: 100% 100%;
+}
+
+header#main div.content nav {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+	color: white;
+	text-align: right;
+}
+
+header.panel div.content nav #logo {
+	position: absolute;
+	background: url("images/logo.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 150px;
+	height: 40px;
+	top: 5px;
+	margin-left: 10%;
+}
+
+header.panel div.content nav a {
+	padding: 10px;
+	line-height: 50px;
+	color: white;
+}
+
+header.panel div.content nav .test-0-nav-0 {
+	padding: 0px;
+}
+
+header#main div.content div.title {
+	text-align: center;
+	color: white;
+	margin-top: 5%;
+}
+
+header#main div.content div.title h1 {
+	font-size: 120px;
+	padding: 20px;
+}
+
+header#main div.content div.title h3 {
+	font-size: 30px;
+	opacity: 0.7;
+}
+
+
+header#branch div.content {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+	color: white;
+	text-align: right;
+}
+
+header#branch div.content p {
+	position: absolute;
+	font-size: 20pt;
+	line-height: 50px;
+	margin-left: 22%;
+}
+
+
+/*-------------------------
+----Конец css Header----
+------------------------*/
+
+
+/*-------------------------
+----Начало css description----
+------------------------*/
+
+section#description div.content {
+	height: 120vh;
+	background-color: white;
+	background: url("images/2.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+section#description div.content h3 {
+	padding: 40px;
+}
+
+section#description div.content input {
+	width: 470px;
+	height: 60px;
+	padding-left: 10px;
+	font-size: 16pt;
+}
+
+section#description div.content .button {
+	margin-top: 40px;
+	width: 400px;
+	border: none;
+	background: #6c95b5;
+	color: white;
+	border-radius: 5px;
+}
+
+section#description div.content img {
+	width: 50%;
+	height: 45%;
+	margin-top: 40px;
+	opacity: 0.7;
+}
+
+/*-------------------------
+----Конец css description----
+------------------------*/
+
+
+/*-------------------------
+----Начало css trust----
+------------------------*/
+
+section#trust div.content {
+	height: 120vh;
+	background-color: white;
+	background: url("images/3.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+section#trust div.content .review {
+	position: relative;
+	width: 80%;
+	height: 20vh;
+	background: #eee;
+	opacity: 0.7;
+	margin: 30px auto;
+	text-align: left;
+	border-radius: 5px;
+}
+
+section#trust div.content .review .name {
+	padding: 20px;
+}
+
+section#trust div.content .review .note {
+	padding-left: 20px;
+}
+
+/*-------------------------
+----Конец css trust----
+------------------------*/
+
+
+/*-------------------------
+----Начало css search----
+------------------------*/
+
+section#search div.content {
+	height: 100vh;
+	background-color: white;
+	text-align: center;
+	background: url("images/4.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+section#search div.content h1 {
+	padding: 30px;
+}
+
+section#search div.content input {
+	width: 50%;
+	height: 60px;
+	padding-left: 5px;
+	font-size: 16pt;
+	margin-top: 20px;
+}
+
+section#search div.content #button {
+	margin-top: 30px;
+	width: 50.5%;
+	border: none;
+	background: #6c95b5;
+	color: white;
+	border-radius: 5px;
+	
+}
+
+/*-------------------------
+----Конец css search----
+------------------------*/
+
+
+/*-------------------------
+----Начало css shares----
+------------------------*/
+
+section#shares div.content {
+	height: 800px;
+	background-color: #FFBF40;
+	text-align: center;
+}
+
+section#shares div.content h1 {
+	padding: 20px;
+}
+
+section#shares div.content .shares {
+	width: 20%;
+	margin-left: 1%;
+	float: left;
+	height: 80%;
+}
+
+section#shares div.content img {
+	width: 100%;
+	height: 30%;
+}
+
+section#shares div.content #lshares {
+	margin-left: 8%;
+}
+
+section#shares div.content h2 {
+	padding: 20px;
+}
+
+section#shares div.content p {
+	text-align: left;
+}
+
+section#shares div.content .shares input {
+	width: 100%;
+	border: none;
+	background: #6c95b5;
+	color: white;
+	border-radius: 5px;
+	margin-top: 30px;
+	height: 50px;
+	font-size: 16pt;
+}
+
+/*-------------------------
+----Конец css shares----
+------------------------*/
+
+
+/*-------------------------
+----Начало css subscription----
+------------------------*/
+
+section#subscription div.content {
+	height: 700px;
+	background-color: ;
+	text-align: center;
+	background: url("images/5.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+section#subscription div.content h1 {
+	padding: 80px 30px 30px 30px;
+}
+
+section#subscription div.content input {
+	width: 50%;
+	color: white;
+	border-radius: 5px;
+	margin-top: 30px;
+	height: 60px;
+	font-size: 16pt;
+}
+
+section#subscription div.content .button {
+	border: none;
+	background: #6c95b5;
+}
+
+/*-------------------------
+----Конец css subscription----
+------------------------*/
+
+
+/*-------------------------
+----Начало css footer----
+------------------------*/
+
+footer.panel {
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+footer.panel .test-0-phone {
+	padding: 20px;
+	font-size: 36pt;
+}
+
+footer.panel a {
+	padding: 10px;
+	line-height: 50px;
+	color: white;
+}
+/*-------------------------
+----Конец css footer----
+------------------------*/
+
+
+/*-------------------------
+----Начало css login----
+------------------------*/
+
+section#description div#login {
+	background-color: white;
+	background: none;
+	background-image: url("images/background.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+}
+
+section#description div#login h1.deslog {
+	padding-top: 7%;
+	font-size: 60pt;
+}
+
+section#description div#login input.notelog, section#description div#login input#bttlog, section#description div#login input#bttreg {
+	width: 500px;
+	height: 60px;
+	border: 1px solid black;
+}
+section#description div#login input#bttlog, section#description div#login input#bttreg {
+	width: 510px;
+}
+
+section#description div#login input#bttlog:hover, section#description div#login input#bttreg:hover {
+	border: 2px solid black;
+}
+
+section#description div#login input#bttreg {
+	background: white;
+	color: black;
+}
+
+/*-------------------------
+----Конец css login----
+------------------------*/
+
+
+/*-------------------------
+----Начало css register----
+------------------------*/
+section#description div#register {
+	height: 150vh;
+	background-color: white;
+	background: url("images/background.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+}
+
+section#description div#register h1.deslog {
+	padding-top: 7%;
+	font-size: 60pt;
+}
+
+section#description div#register input.notelog, section#description div#register input#bttreg {
+	width: 70%;
+	height: 60px;
+	border: 1px solid black;
+	margin-top: 20px;
+}
+
+section#description div#register input#bttreg:hover {
+	border: 2px solid black;
+}
+
+section#description div#register input#bttreg {
+	background: #6c95b5;
+	color: white;
+	width: 71%;
+	margin-top: 50px;
+}
+
+dialog {
+	width: 600px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+dialog button {
+	width: 80%;
+	margin-left: 10%;
+	height: 30px;
+	font-family: Montserrat-Light;
+	font-size: 12pt;
+	background: #6c95b5;
+	color: white;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+dialog p {
+	padding: 20px;
+	font-size: 14pt;
+}
+
+/*-------------------------
+----Конец css register----
+------------------------*/
+
+
+/*-------------------------
+----Начало css profile----
+------------------------*/
+
+section#trust div#profile {
+	height: 2600px;
+	background: none;
+	background-image: url("images/8.jpg");
+	background-size: 100% 100%;
+}
+
+section#trust div#profile h1 {
+	font-size: 60pt;
+	padding: 30px;
+	padding-top: 7%;
+}
+section#trust div#profile h3 {
+	font-size: 20pt;
+	line-height: 45px;
+	padding-bottom: 30px;
+	font-style: italic;
+}
+
+section#trust div#profile p.title {
+	font-size: 24pt;
+	padding-top: 20px;
+	color: #6c95b5;
+}
+
+section#trust div#profile div.review {
+	width: 70%;
+	height: 250px;
+	background-color: #eee;
+	opacity: 0.7;
+	color: black;
+	border: 1px solid black;
+}
+
+section#trust div#profile div.review p.date {
+	padding: 10px;
+	font-size: 20pt;
+	font-style: bold;
+}
+
+section#trust div#profile div.review p.time {
+	padding-left: 10px;
+	font-size: 12pt;
+	font-style: bold;
+}
+
+section#trust div#profile div.review input {
+	width: 90%;
+	height: 50px;
+	margin-left: 5%;
+	border-radius: 5px;
+	margin-top: 30px;
+	font-size: 16pt;
+	background: #6c95b5;
+	color: white;
+	border: 1px solid black;
+	
+}
+/*-------------------------
+----Конец css profile----
+------------------------*/
+
+
+/*-------------------------
+----Начало css search----
+------------------------*/
+section#description div#search {
+	height: 1400px;
+	background-image: url("images/background.jpg");
+	background-size: 100% 100%;
+}
+section#description div#search h1.deslog {
+	padding-top: 7%;
+	font-size: 60pt;
+}
+section#description div#search div.flight {
+	width: 75%;
+	height: 330px;
+	background-color: #eee;
+	opacity: 0.7;
+	color: black;
+	margin: 0 auto;
+	text-align: center;
+	border: solid 1px black;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 50px;
+}
+
+section#description div#search div.flight h2 {
+	padding: 20px 0 0 29px;
+	text-align: left;
+	font-size: 25pt;
+}
+section#description div#search div.flight input {
+	width: 20px;
+}
+section#description div#search input.bttsearch {
+	width: 60%;
+	height: 60px;
+	background-color: #6c95b5;
+	color: white;
+	margin-top: 30px;
+}
+
+/*-------------------------
+----Конец css search----
+------------------------*/
+
+
+/*-------------------------
+----Начало css booking----
+------------------------*/
+
+section#description div#bkng {
+	height: 2000px;
+	background-image: url("images/background.jpg");
+	background-size: 100% 100%;
+}
+
+section#description div#bkng h1.deslog {
+	padding-top: 8%;
+	font-size: 60pt;
+}
+
+section#description div#bkng div.flight {
+	width: 75%;
+	height: 330px;
+	background-color: #eee;
+	color: black;
+	margin: 0 auto;
+	text-align: center;
+	border: solid 1px black;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 50px;
+}
+section#description div#bkng div#booking th.title {
+	text-align: left;
+	font-size: 24pt;
+	margin-top: 10px;
+}
+
+
+section#description div#bkng div#booking td {
+	border-bottom: none;
+}
+
+section#description div#bkng div#passengers {
+	height: 400px;
+}
+
+section#description div#bkng div#passengers input.text {
+	width: 90%;
+	margin-top: 20px;
+}
+section#description div#bkng div#passengers input.bttpass {
+	width: 45.4%;
+	height: 60px;
+	margin-top: 20px;
+	border-radius: 5px;
+	font-size: 16pt;
+	background: #6c95b5;
+	color: white;
+	border: 1px solid black;
+}
+
+section#description div#bkng p {
+	font-size: 24pt;
+}
+
+section#description div#bkng p.note {
+	margin-top: 30px;
+}
+
+section#description div#bkng p.cost {
+	font-size: 60pt;
+	margin-top: 30px;
+}
+
+section#description div#bkng input.bttarrange {
+	width: 50%;
+	height: 60px;
+	margin-top: 40px;
+	border-radius: 5px;
+	font-size: 16pt;
+	background: #6c95b5;
+	color: white;
+	border: 1px solid black;
+}
+/*-------------------------
+----Конец css booking----
+------------------------*/
+
+
+/*-------------------------
+Начало css booking_management
+------------------------*/
+
+section#description div#bkng_mngmnt {
+	height: 2000px;
+	background-image: url("images/8.jpg");
+	background-size: 100% 100%;
+}
+
+section#description div#bkng_mngmnt h1 {
+	padding-top: 8%;
+	font-size: 60pt;
+	
+}
+section#description div#bkng_mngmnt h3 {
+	font-size: 20pt;
+}
+
+section#description div#bkng_mngmnt div.wrapper {
+	width: 75%;
+	height: 60%;
+	background-color: #eee;
+	color: black;
+	margin: 0 auto;
+	text-align: center;
+	border: solid 1px black;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 50px;
+	opacity: .9;
+}
+
+section#description div#bkng_mngmnt div.wrapper p {
+	font-size: 24pt;
+	padding: 50px 0 20px 0;
+	color: #6c95b5;
+	font-style: italic;
+}
+
+section#description div#bkng_mngmnt div.wrapper table {
+	font-size: 12pt;
+}
+section#description div#bkng_mngmnt div.wrapper table tr td {
+	border-bottom: none;
+	font-size: 12pt;
+}
+
+section#description div#bkng_mngmnt div.wrapper table tr td input {
+	width: 160px;
+	height: 40px;
+	padding: 0;
+	font-size: 12pt;
+	background: #6c95b5;
+	color: white;
+}
+
+section#description div#bkng_mngmnt div.wrapper div.passengers {
+	width: 75%;
+	height: 150px;
+	opacity: .7;
+	background-color: #eee;
+	color: black;
+	margin: 0 auto;
+	text-align: center;
+	border: solid 1px black;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+/*-------------------------
+Конец css booking_management
+------------------------*/
+
+
+/*-------------------------
+-----Начало css seat-----
+------------------------*/
+
+section#seat div.content {
+	height: 1000px;
+	background-image: url("images/background.jpg");
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+section#seat div.content h1 {
+	padding-top: 5%;
+	font-size: 50pt;
+}
+
+section#seat div.content div.komponovka {
+	width: 80%;
+	height: 50%;
+	margin: 0 auto;
+	background-image: url("images/komponovka.jpg");
+	background-size: 100% 100%;
+}
+/*-------------------------
+-----Конец css seat-----
+------------------------*/
+

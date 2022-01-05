@@ -1,0 +1,59 @@
+/*Head slider*/
+div.head-slider {
+	position: relative;
+}
+
+div.head-slider div.slides {
+	position: absolute;
+	z-index: -1;
+	width:  100%;
+	height:  100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	filter: brightness(60%);
+}
+
+div.head-slider img {
+	filter: blur(5px);
+	width:  100%;
+	height:  100%;
+}
+
+div.head-slider div.announce {
+	display: none;
+	width: 70%;
+}
+
+div.head-slider div.announce a {
+	color: white;
+}
+
+div.head-slider div.indicator {
+	width: 10px;
+	margin-bottom:  10px;
+	height:  40px;
+	cursor:  pointer;
+	background-color:  #eeede7;
+}
+
+div.head-slider div.current {
+	background-color:  #dfc88b;
+}
+
+
+/* Slide animation */
+div.head-slider div.slides img {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: .5s ;
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

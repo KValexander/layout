@@ -9,24 +9,36 @@
 	<link rel="icon" href="images/favicon.png">
 	<!-- Style -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="head-slider.css">
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- head-slider -->
 	<script src="head-slider.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			document.querySelectorAll("img").forEach(img => console.log(img));
+		});
+
+	</script>
 </head>
 <body>
 	
 	<!-- Header -->
 	<header>
+		<!-- Head slider -->
 		<div class="head-slider">
+			<!-- Slides -->
 			<div class="slides flex">
 				<img src="https://i0.wp.com/operationrainfall.com/wp-content/uploads/2017/10/Screenshot1.png" alt="">
 				<img src="https://media.moddb.com/images/games/1/17/16124/screenshot0003.png" alt="">
 				<img src="https://avatars.mds.yandex.net/get-zen_doc/1567507/pub_5f6753004c07ce060400a488_5f676902725dfb4524191bda/scale_1200" alt="">
 			</div>
 
+			<!-- Content -->
 			<div class="content">
+				<!-- Header -->
 				<div class="p-2-0 flex between items-center">
 					<a href="index.html"><div class="logo"></div></a>
 					<div class="search flex">
@@ -43,6 +55,7 @@
 						</ul>
 					</nav>
 				</div>
+				<!-- Slider content -->
 				<div class="p-2-0 flex between">
 					<div>
 						<div class="announce">
@@ -73,6 +86,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- Slider indicatiors -->
 					<div class="flex items-center col">
 						<div class="indicator"></div>
 						<div class="indicator"></div>
@@ -83,11 +97,6 @@
 		</div>
 	</header>
 
-	<!-- Slider -->
-	<div class="slider">
-		<div class="content"></div>
-	</div>
-
 	<!-- Content -->
 	<main>
 		<div class="content"></div>
@@ -95,7 +104,48 @@
 
 	<!-- Footer -->
 	<footer>
-		<div class="content"></div>
+		<!-- Top part -->
+		<div class="top content p-2-0 flex between">
+			<!-- Logo -->
+			<div class="block">
+				<a href="index.html"><div class="logo"></div></a>
+			</div>
+			<!-- About -->
+			<div class="block">
+				<h3 class="mb-2">О нас</h3>
+				<p><a href="">О проекте</a></p>
+				<p><a href="">Контакты</a></p>
+				<p><a href="">Конфиденциальность</a></p>
+			</div>
+			<!-- Links -->
+			<div class="block">
+				<h3 class="mb-2">Полезные ссылки</h3>
+				<p><a href="">Новости</a></p>
+				<p><a href="">Дискуссии</a></p>
+				<p><a href="">Визуальные новеллы</a></p>
+			</div>
+			<!-- Search and Social network -->
+			<div class="block">
+				<!-- Search -->
+				<div class="search flex mb-2">
+					<input type="search" placeholder="Поиск">
+					<button class="flex items-center"></button>
+				</div>
+				<!-- Social network -->
+				<h3 class="mb-2">Присоединяйтесь</h3>
+				<div class="flex">
+					<div class="mr-2"><a><img src="icons/vk.png" class="social" alt=""></a></div>
+					<div class="mr-2"><a><img src="icons/twitter.png" class="social" alt=""></a></div>
+					<div><a><img src="icons/telegram.png" class="social" alt=""></a></div>
+				</div>
+			</div>
+		</div><br>
+		<!-- Bottom part -->
+		<div class="bottom p-1-0">
+			<div class="content">
+				<p>© 2022-2022 Все права защищены</p>
+			</div>
+		</div>
 	</footer>
 
 

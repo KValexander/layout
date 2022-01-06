@@ -10,11 +10,15 @@
 	<!-- Style -->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="head-slider.css">
+	<!-- Additionaly style -->
+	<link rel="stylesheet" href="additionaly.css">
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- Script -->
 	<script src="script.js"></script>
+	<!-- Discussion -->
+	<script src="discussion.js"></script>
 	<!-- head-slider -->
 	<script src="head-slider.js"></script>
 </head>
@@ -30,11 +34,12 @@
 				<img src="https://media.moddb.com/images/games/1/17/16124/screenshot0003.png" alt="">
 				<img src="https://kartinkin.net/uploads/posts/2021-07/thumbs/1625896763_58-kartinkin-com-p-anime-fon-kabinet-anime-krasivo-59.jpg" alt="">
 			</div>
+			<!-- End slides -->
 
 			<!-- Content -->
 			<div class="content">
 				<!-- Header -->
-				<div class="p-2-0 flex between items-center">
+				<div class="p-2-0 flex justify-between items-center">
 					<a href="index.html"><div class="logo"></div></a>
 					<div class="search flex">
 						<input type="search" placeholder="Поиск">
@@ -51,10 +56,11 @@
 						</ul>
 					</nav>
 				</div>
+				<!-- End header -->
 				<!-- Slider content -->
-				<div class="p-2-0 flex between">
+				<div class="p-2-0 flex justify-between">
 					<div class="w-65">
-						<div class="announce">
+						<div class="preview">
 							<a href=""><h1 class="mb-1">Первая новость</h1></a>
 							<p>Анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости</p>
 							<hr>
@@ -63,7 +69,7 @@
 								<p>Дата и время создания</p>
 							</div>
 						</div>
-						<div class="announce">
+						<div class="preview">
 							<a href=""><h1 class="mb-1">Вторая новость</h1></a>
 							<p>Анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости</p>
 							<hr>
@@ -72,7 +78,7 @@
 								<p>Дата и время создания</p>
 							</div>
 						</div>
-						<div class="announce">
+						<div class="preview">
 							<a href=""><h1 class="mb-1">Третья новость</h1></a>
 							<p>Анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости анонс новости</p>
 							<hr>
@@ -88,127 +94,258 @@
 						<div class="indicator"></div>
 						<div class="indicator"></div>
 					</div>
+					<!-- End slider indicatiors -->
 				</div>
+				<!-- End slider content -->
 			</div>
+			<!-- End content -->
 		</div>
+		<!-- End head slider -->
 	</header>
+	<!-- End header -->
 
 	<!-- Content -->
 	<main>
-		<div class="content flex between row-rev p-3-0">
+		<div class="content flex justify-between no-wrap p-3-0">
+			<!-- Main content -->
+			<div class="w-75 mr-2">
+				<div class="head">Лучшее за определённое время</div>
+				<!-- Horizontal slider -->
+				<div class="horizontal-slider flex no-wrap overflow-x-auto">
+					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-light hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
+						<div class="w-100 z-2 absolute flex justify-between">
+							<div class="bg-alpha-blue p-1">+20</div>
+							<div class="bg-alpha-blue p-1">Категория</div>
+						</div>
+						<div class="bg-alpha-blue z-1 p-1">
+							<h3><a href="" class="color-light">Статья</a></h3>
+							<p>Краткое содержание статьи</p>
+						</div>
+					</div>
+					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-light hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
+						<div class="w-100 z-2 absolute flex justify-between">
+							<div class="bg-alpha-blue p-1">+20</div>
+							<div class="bg-alpha-blue p-1">Категория</div>
+						</div>
+						<div class="bg-alpha-blue z-1 p-1">
+							<h3><a href="" class="color-light">Статья</a></h3>
+							<p>Краткое содержание статьи</p>
+						</div>
+					</div>
+					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-light hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
+						<div class="w-100 z-2 absolute flex justify-between">
+							<div class="bg-alpha-blue p-1">+20</div>
+							<div class="bg-alpha-blue p-1">Категория</div>
+						</div>
+						<div class="bg-alpha-blue z-1 p-1">
+							<h3><a href="" class="color-light">Статья</a></h3>
+							<p>Краткое содержание статьи</p>
+						</div>
+					</div>
+					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-light hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
+						<div class="w-100 z-2 absolute flex justify-between">
+							<div class="bg-alpha-blue p-1">+20</div>
+							<div class="bg-alpha-blue p-1">Категория</div>
+						</div>
+						<div class="bg-alpha-blue z-1 p-1">
+							<h3><a href="" class="color-light">Статья</a></h3>
+							<p>Краткое содержание статьи</p>
+						</div>
+					</div>
+				</div>
+				<!-- End horizontal slider -->
+				<!-- Novels and Discussions -->
+				<div class="head">Последние добавления</div>
+				<div class="net tc-3 m-20-0 overflow-hidden">
+					<!-- Discussions -->
+					<div id="main_discussions" class="post bg-white r-3 p-2 max-h-6 overflow-y-auto">
+						<div class="item">
+							<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+							<p>Время - краткое содержание - автор</p>
+						</div>
+						<div class="item">
+							<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+							<p>Время - краткое содержание - автор</p>
+						</div>
+						<div class="item">
+							<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+							<p>Время - краткое содержание - автор</p>
+						</div>
+						<div class="item">
+							<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+							<p>Время - краткое содержание - автор</p>
+						</div>
+						<div class="item">
+							<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+							<p>Время - краткое содержание - автор</p>
+						</div>
+						<div class="item">
+							<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+							<p>Время - краткое содержание - автор</p>
+						</div>
+						<p><a class="color-dark">Загрузить ещё</a></p>
+					</div>
+					<!-- End discussions -->
+					<!-- Novels -->
+					<div class="post bg-white c-2 r-3 p-2 max-h-6 overflow-y-auto">
+						<div class="net tc-3 h-100">
+							<div class="relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
+								<div class="w-100 z-2 absolute flex justify-between">
+									<div class="bg-alpha-blue p-1">4.8</div>
+								</div>
+								<div class="bg-alpha-blue z-1 p-05 w-100">
+									<p><a href="" class="color-light">Название новеллы</a></p>
+								</div>
+							</div>
+							<div class="relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
+								<div class="w-100 z-2 absolute flex justify-between">
+									<div class="bg-alpha-red p-1">4.8</div>
+								</div>
+								<div class="bg-alpha-red z-1 p-05 w-100">
+									<p><a href="" class="color-light">Название новеллы</a></p>
+								</div>
+							</div>
+							<div class="relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
+								<div class="w-100 z-2 absolute flex justify-between">
+									<div class="bg-alpha-blue p-1">4.8</div>
+								</div>
+								<div class="bg-alpha-blue z-1 p-05 w-100">
+									<p><a href="" class="color-light">Название новеллы</a></p>
+								</div>
+							</div>
+							<div class="relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
+								<div class="w-100 z-2 absolute flex justify-between">
+									<div class="bg-alpha-red p-1">4.8</div>
+								</div>
+								<div class="bg-alpha-red z-1 p-05 w-100">
+									<p><a href="" class="color-light">Название новеллы</a></p>
+								</div>
+							</div>
+							<div class="relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
+								<div class="w-100 z-2 absolute flex justify-between">
+									<div class="bg-alpha-blue p-1">4.8</div>
+								</div>
+								<div class="bg-alpha-blue z-1 p-05 w-100">
+									<p><a href="" class="color-light">Название новеллы</a></p>
+								</div>
+							</div>
+							<div class="relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
+								<div class="w-100 z-2 absolute flex justify-between">
+									<div class="bg-alpha-red p-1">4.8</div>
+								</div>
+								<div class="bg-alpha-red z-1 p-05 w-100">
+									<p><a href="" class="color-light">Название новеллы</a></p>
+								</div>
+							</div>
+							<div class="relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
+								<div class="w-100 z-2 absolute flex justify-between">
+									<div class="bg-alpha-blue p-1">4.8</div>
+								</div>
+								<div class="bg-alpha-blue z-1 p-05 w-100">
+									<p><a href="" class="color-light">Название новеллы</a></p>
+								</div>
+							</div>
+							<div class="relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
+								<div class="w-100 z-2 absolute flex justify-between">
+									<div class="bg-alpha-red p-1">4.8</div>
+								</div>
+								<div class="bg-alpha-red z-1 p-05 w-100">
+									<p><a href="" class="color-light">Название новеллы</a></p>
+								</div>
+							</div>
+							<div class="relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
+								<div class="w-100 z-2 absolute flex justify-between">
+									<div class="bg-alpha-blue p-1">4.8</div>
+								</div>
+								<div class="bg-alpha-blue z-1 p-05 w-100">
+									<p><a href="" class="color-light">Название новеллы</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="mt-1 flex color-light center justify-center">
+							<div class="paginator bg-red">1</div>
+							<div class="paginator bg-blue">2</div>
+							<div class="paginator bg-blue">3</div>
+							<div class="paginator bg-blue">4</div>
+							<div class="paginator bg-blue">5</div>
+							<div class="paginator bg-blue">></div>
+							<div class="paginator bg-blue">>></div>
+						</div>
+					</div>
+					<!-- End novels -->
+				</div>
+				<!-- End Novels and Discussions -->
+			</div>
+			<!-- End main content -->
+
 			<!-- Sidebar -->
-			<aside>
+			<aside class="w-25">
 				<div class="head">Последние статьи</div>
 				<div class="container">
-					<!-- Articles -->
-					<div class="article flex items-end">
-						<img src="https://sun9-58.userapi.com/c633631/u152453780/video/y_5cd782b0.jpg" alt="">
-						<div class="text p-1">
-							<h3><a href="">Статья</a></h3>
+					<!-- Preview articles -->
+					<div class="relative min-h-2 w-100 overflow-hidden flex items-end mr-1 no-shrink color-light hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
+						<div class="w-100 z-2 absolute flex justify-between">
+							<div class="bg-alpha-red p-1">+20</div>
+							<div class="bg-alpha-red p-1">Категория</div>
+						</div>
+						<div class="bg-alpha-red z-1 p-1 w-100">
+							<h3><a href="" class="color-light">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
 						</div>
-					</div><hr>
-					<div class="article flex items-end">
-						<img src="https://sun9-58.userapi.com/c633631/u152453780/video/y_5cd782b0.jpg" alt="">
-						<div class="text p-1">
-							<h3><a href="">Статья</a></h3>
+					</div><br>
+					<div class="relative min-h-2 w-100 overflow-hidden flex items-end mr-1 no-shrink color-light hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
+						<div class="w-100 z-2 absolute flex justify-between">
+							<div class="bg-alpha-red p-1">+20</div>
+							<div class="bg-alpha-red p-1">Категория</div>
+						</div>
+						<div class="bg-alpha-red z-1 p-1 w-100">
+							<h3><a href="" class="color-light">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
 						</div>
-					</div><hr>
-					<div class="article flex items-end">
-						<img src="https://sun9-58.userapi.com/c633631/u152453780/video/y_5cd782b0.jpg" alt="">
-						<div class="text p-1">
-							<h3><a href="">Статья</a></h3>
+					</div><br>
+					<div class="relative min-h-2 w-100 overflow-hidden flex items-end mr-1 no-shrink color-light hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
+						<div class="w-100 z-2 absolute flex justify-between">
+							<div class="bg-alpha-red p-1">+20</div>
+							<div class="bg-alpha-red p-1">Категория</div>
+						</div>
+						<div class="bg-alpha-red z-1 p-1 w-100">
+							<h3><a href="" class="color-light">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
 						</div>
-					</div><hr>
+					</div><br>
 				</div>
 			</aside>
-			<!-- Content -->
-			<div class="w-75">
-				<div class="head">Лучшее за неделю</div>
-				<div class="best-slider flex no-wrap">
-					<div class="article flex items-end mr-1">
-						<img src="https://sun9-58.userapi.com/c633631/u152453780/video/y_5cd782b0.jpg" alt="">
-						<div class="text p-1">
-							<h3><a href="">Статья</a></h3>
-							<p>Краткое содержание статьи</p>
-						</div>
-					</div>
-					<div class="article flex items-end mr-1">
-						<img src="https://sun9-58.userapi.com/c633631/u152453780/video/y_5cd782b0.jpg" alt="">
-						<div class="text p-1">
-							<h3><a href="">Статья</a></h3>
-							<p>Краткое содержание статьи</p>
-						</div>
-					</div>
-					<div class="article flex items-end mr-1">
-						<img src="https://sun9-58.userapi.com/c633631/u152453780/video/y_5cd782b0.jpg" alt="">
-						<div class="text p-1">
-							<h3><a href="">Статья</a></h3>
-							<p>Краткое содержание статьи</p>
-						</div>
-					</div>
-					<div class="article flex items-end mr-1">
-						<img src="https://sun9-58.userapi.com/c633631/u152453780/video/y_5cd782b0.jpg" alt="">
-						<div class="text p-1">
-							<h3><a href="">Статья</a></h3>
-							<p>Краткое содержание статьи</p>
-						</div>
-					</div>
-					<div class="article flex items-end mr-1">
-						<img src="https://sun9-58.userapi.com/c633631/u152453780/video/y_5cd782b0.jpg" alt="">
-						<div class="text p-1">
-							<h3><a href="">Статья</a></h3>
-							<p>Краткое содержание статьи</p>
-						</div>
-					</div>
-				</div>
-				<div class="head">Последние добавления</div>
-				<div class="net tc-3">
-					<div class="post r-3">
-						<div class="item">
-							<p><a href="">Название дискуссии</a></p>
-							<p>Время - краткое содержание - автор</p>
-						</div>
-						<div class="item">
-							<p><a href="">Название дискуссии</a></p>
-							<p>Время - краткое содержание - автор</p>
-						</div>
-						<div class="item">
-							<p><a href="">Название дискуссии</a></p>
-							<p>Время - краткое содержание - автор</p>
-						</div>
-						<div class="item">
-							<p><a href="">Название дискуссии</a></p>
-							<p>Время - краткое содержание - автор</p>
-						</div>
-						<div class="item">
-							<p><a href="">Название дискуссии</a></p>
-							<p>Время - краткое содержание - автор</p>
-						</div>
-						<div class="item">
-							<p><a href="">Название дискуссии</a></p>
-							<p>Время - краткое содержание - автор</p>
-						</div>
-						<p><a href="">Загрузить ещё</a></p>
-					</div>
-					<div class="post c-2 r-3">
-					</div>
-				</div>
-				<!-- <div class="head">Заголовок</div> -->
-			</div>
+			<!-- End sidebar -->
 		</div>
 	</main>
+	<!-- End content -->
 
 	<!-- Footer -->
 	<footer>
+
 		<!-- Top part -->
-		<div class="top content p-2-0 flex between">
+		<div class="top content p-2-0 flex justify-between">
 			<!-- Logo -->
 			<div class="block">
 				<a href="index.html"><div class="logo"></div></a>
 			</div>
+			<!-- End logo -->
 			<!-- About -->
 			<div class="block">
 				<h3 class="mb-2">О нас</h3>
@@ -216,6 +353,7 @@
 				<p><a href="">Контакты</a></p>
 				<p><a href="">Конфиденциальность</a></p>
 			</div>
+			<!-- End about -->
 			<!-- Links -->
 			<div class="block">
 				<h3 class="mb-2">Полезные ссылки</h3>
@@ -223,6 +361,7 @@
 				<p><a href="">Дискуссии</a></p>
 				<p><a href="">Визуальные новеллы</a></p>
 			</div>
+			<!-- End links -->
 			<!-- Search and Social network -->
 			<div class="block">
 				<!-- Search -->
@@ -230,6 +369,7 @@
 					<input type="search" placeholder="Поиск">
 					<button class="flex items-center"></button>
 				</div>
+				<!-- End search -->
 				<!-- Social network -->
 				<h3 class="mb-2">Присоединяйтесь</h3>
 				<div class="flex">
@@ -237,15 +377,22 @@
 					<div class="mr-2"><a><img src="icons/twitter.png" class="social" alt=""></a></div>
 					<div><a><img src="icons/telegram.png" class="social" alt=""></a></div>
 				</div>
+				<!-- End social network -->
 			</div>
+			<!-- End search and social network -->
 		</div><br>
+		<!-- End top part -->
+
 		<!-- Bottom part -->
 		<div class="bottom p-1-0">
 			<div class="content">
 				<p>© 2022-2022 Все права защищены</p>
 			</div>
 		</div>
+		<!-- End bottom part -->
+
 	</footer>
+	<!-- End footer -->
 
 
 </body>

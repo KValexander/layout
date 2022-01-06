@@ -20,11 +20,11 @@ div.head-slider img {
 	height:  100%;
 }
 
-div.head-slider div.announce {
+div.head-slider div.preview {
 	display: none;
 }
 
-div.head-slider div.announce a {
+div.head-slider div.preview a {
 	color: white;
 }
 
@@ -39,7 +39,6 @@ div.head-slider div.indicator {
 div.head-slider div.current {
 	background-color:  #dfc88b;
 }
-
 
 /* Slide animation */
 div.head-slider div.slides img {

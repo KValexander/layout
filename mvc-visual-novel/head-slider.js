@@ -5,7 +5,7 @@ let head_slider = {
 		head_slider.slide(0);
 	},
 	slide: function(current) {
-		let ann = document.querySelectorAll(".head-slider .announce");
+		let ann = document.querySelectorAll(".head-slider .preview");
 		let img = document.querySelectorAll(".head-slider .slides img");
 		let ind = document.querySelectorAll(".head-slider .indicator");
 

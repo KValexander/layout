@@ -201,17 +201,18 @@ div.logo:hover {
 }
 /*Search*/
 div.search input[type=search] {
-	border:  solid 1.5px #b12650;
+	border:  solid 1.5px #00adc7;
 	border-radius: 5px 0 0 5px;
 }
 div.search button {
+	background-color: #00adc7;
 	border-radius: 0 5px 5px 0;
 	padding:  0px 15px;
 }
 div.search button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  font-size: 16px;
+	content: "\f002";
+	font-family: FontAwesome;
+	font-size: 16px;
 }
 /*Footer*/
 footer {
@@ -231,9 +232,33 @@ div.horizontal-slider {
 	overflow-x: auto;
 }
 
+div.preview_novel div.bottom {
+	position: relative;
+	top: 80%;
+	transition: .2s;
+}
+
+div.preview_novel:hover div.top {
+	display: none;
+}
+
+div.preview_novel:hover div.bottom {
+	top: 0px;
+}
+
 div.paginator {
 	cursor: pointer;
 	min-width: 30px;
+	transition: .2s;
 	padding: 5px 10px;
 	margin-right: 5px;
+	background-color: #00adc7;
+}
+
+div.paginator.current {
+	background-color: #b12650;
+}
+
+div.paginator:hover {
+	background-color: #b12650;
 }

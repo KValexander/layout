@@ -1,77 +1,136 @@
 let discussion = {
+	novel: function() {
+		document.getElementById("main_discussions").innerHTML = `
+			<div class="item">
+				<a onclick="discussion.back()" class="color-blue"><- Назад</a>
+				<h3 class="mt-1">Дискуссии</h3>
+				<p>К какой новелле</p>
+			</div>
+			<div class="item">
+				<p><a onclick="discussion.goto('novel')" class="color-blue">Название дискуссии</a></p>
+				<p>Время - краткое содержание - автор</p>
+			</div>
+			<div class="item">
+				<p><a onclick="discussion.goto('novel')" class="color-blue">Название дискуссии</a></p>
+				<p>Время - краткое содержание - автор</p>
+			</div>
+			<div class="item">
+				<p><a onclick="discussion.goto('novel')" class="color-blue">Название дискуссии</a></p>
+				<p>Время - краткое содержание - автор</p>
+			</div>
+			<div class="item">
+				<p><a onclick="discussion.goto('novel')" class="color-blue">Название дискуссии</a></p>
+				<p>Время - краткое содержание - автор</p>
+			</div>
+			<div class="item">
+				<p><a onclick="discussion.goto('novel')" class="color-blue">Название дискуссии</a></p>
+				<p>Время - краткое содержание - автор</p>
+			</div>
+			<div class="item">
+				<p><a onclick="discussion.goto('novel')" class="color-blue">Название дискуссии</a></p>
+				<p>Время - краткое содержание - автор</p>
+			</div>
+			<p><a class="color-blue">Загрузить ещё</a></p>
+		`;
+	},
+	comments: function() {
+		document.getElementById("main_discussions").innerHTML = `
+			<div class="item">
+				<a onclick="discussion.back()" class="color-blue"><- Назад</a>
+				<h3 class="mt-1">Комментарии</h3>
+				<p>К какой новелле</p>
+			</div>
+			<div class="item">
+				<p>1. <a class="color-blue">Автор</a>, время</a></p>
+				<p>Содержание комментария</p>
+			</div>
+			<div class="item">
+				<p>2. <a class="color-blue">Автор</a>, время</a></p>
+				<p>Содержание комментария</p>
+			</div>
+			<div class="item">
+				<p>3. <a class="color-blue">Автор</a>, время</a></p>
+				<p>Содержание комментария</p>
+			</div>
+			<div class="item">
+				<p>4. <a class="color-blue">Автор</a>, время</a></p>
+				<p>Содержание комментария</p>
+			</div>
+			<div class="item">
+				<p>5. <a class="color-blue">Автор</a>, время</a></p>
+				<p>Содержание комментария</p>
+			</div>
+			<div class="item">
+				<p>6. <a class="color-blue">Автор</a>, время</a></p>
+				<p>Содержание комментария</p>
+			</div>
+			<p><a class="color-blue">Загрузить ещё</a></p>
+		`;
+
+	},
 	back: function() {
 		document.getElementById("main_discussions").innerHTML = `
 			<div class="item">
-				<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+				<p><a onclick="discussion.goto()" class="color-blue">Название дискуссии</a></p>
 				<p>Время - краткое содержание - автор</p>
 			</div>
 			<div class="item">
-				<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+				<p><a onclick="discussion.goto()" class="color-blue">Название дискуссии</a></p>
 				<p>Время - краткое содержание - автор</p>
 			</div>
 			<div class="item">
-				<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+				<p><a onclick="discussion.goto()" class="color-blue">Название дискуссии</a></p>
 				<p>Время - краткое содержание - автор</p>
 			</div>
 			<div class="item">
-				<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+				<p><a onclick="discussion.goto()" class="color-blue">Название дискуссии</a></p>
 				<p>Время - краткое содержание - автор</p>
 			</div>
 			<div class="item">
-				<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+				<p><a onclick="discussion.goto()" class="color-blue">Название дискуссии</a></p>
 				<p>Время - краткое содержание - автор</p>
 			</div>
 			<div class="item">
-				<p><a onclick="discussion.goto()" class="color-dark">Название дискуссии</a></p>
+				<p><a onclick="discussion.goto()" class="color-blue">Название дискуссии</a></p>
 				<p>Время - краткое содержание - автор</p>
 			</div>
-			<p><a class="color-dark">Загрузить ещё</a></p>
+			<p><a class="color-blue">Загрузить ещё</a></p>
 		`;
 	},
-	goto: function() {
+	goto: function(word) {
+		word = (word == "novel") ? "discussion.novel()" : "discussion.back()";
 		document.getElementById("main_discussions").innerHTML = `
 			<div class="item">
-				<a onclick="discussion.back()" class="color-dark"><- Назад</a>
-				<h3 class="m-1-0">Дискуссия</h3>
+				<a onclick="${word}" class="color-blue"><- Назад</a>
+				<h3 class="mt-1">Дискуссия</h3>
 				<p>К какой новелле</p>
 				<p>Содержание дискуссии</p>
 			</div>
 			<div class="item">
-				<p>0. Кто, когда</p>
-				<p>Ответ ответ ответ ответ ответ</p>
+				<p>1. <a class="color-blue">Автор</a>, время</p>
+				<p>Содержание ответа к дискуссии</p>
 			</div>
 			<div class="item">
-				<p>1. Кто, когда</p>
-				<p>Ответ</p>
+				<p>2. <a class="color-blue">Автор</a>, время</p>
+				<p>Содержание ответа к дискуссии</p>
 			</div>
 			<div class="item">
-				<p>3. Кто, когда</p>
-				<p>Ответ ответ ответ ответ ответ</p>
+				<p>3. <a class="color-blue">Автор</a>, время</p>
+				<p>Содержание ответа к дискуссии</p>
 			</div>
 			<div class="item">
-				<p>4. Кто, когда</p>
-				<p>Ответ</p>
+				<p>4. <a class="color-blue">Автор</a>, время</p>
+				<p>Содержание ответа к дискуссии</p>
 			</div>
 			<div class="item">
-				<p>5. Кто, когда</p>
-				<p>Ответ ответ ответ ответ ответ</p>
+				<p>5. <a class="color-blue">Автор</a>, время</p>
+				<p>Содержание ответа к дискуссии</p>
 			</div>
 			<div class="item">
-				<p>6. Кто, когда</p>
-				<p>Ответ</p>
+				<p>6. <a class="color-blue">Автор</a>, время</p>
+				<p>Содержание ответа к дискуссии</p>
 			</div>
-			<div class="item">
-				<p>7. Кто, когда</p>
-				<p>Ответ ответ ответ ответ ответ</p>
-			</div>
-			<div class="item">
-				<p>8. Кто, когда</p>
-				<p>Ответ</p>
-			</div>
-			<div class="item">
-				<p>9. Кто, когда</p>
-				<p>Ответ ответ ответ ответ ответ</p>
-			</div>
+			<p><a class="color-blue">Загрузить ещё</a></p>
 		`;
 	}
 }

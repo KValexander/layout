@@ -14,8 +14,11 @@
 .justify { text-align:  justify; }
 
 /*Text color*/
-.color-light { color: #eeede7 }
-.color-dark  { color: #333 }
+.color-light   { color: #eeede7 }
+.color-dark    { color: #333 }
+.color-red     { color: #b12650 }
+.color-blue    { color: #00adc7 }
+.color-yellow  { color: #dfc88b }
 
 .color-white { color: white }
 .color-black { color: black }
@@ -241,7 +244,7 @@
 div.net {
 	display: grid;
 	grid-gap: 5px;
-	/*grid-auto-rows: 200px;*/
+	grid-auto-rows: 2fr;
 	grid-auto-flow: dense;
 }
 div.tc-2 { grid-template-columns: repeat(2, 1fr); }

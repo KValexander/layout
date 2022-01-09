@@ -82,6 +82,27 @@
 .w-95 {width:  95%;}
 .w-100 {width:  100%;}
 
+.w-5-px {width:  50px;}
+.w-10-px {width:  100px;}
+.w-15-px {width:  150px;}
+.w-20-px {width:  200px;}
+.w-25-px {width:  250px;}
+.w-30-px {width:  300px;}
+.w-35-px {width:  350px;}
+.w-40-px {width:  400px;}
+.w-45-px {width:  450px;}
+.w-50-px {width:  500px;}
+.w-55-px {width:  550px;}
+.w-60-px {width:  600px;}
+.w-65-px {width:  650px;}
+.w-70-px {width:  700px;}
+.w-75-px {width:  750px;}
+.w-80-px {width:  800px;}
+.w-85-px {width:  850px;}
+.w-90-px {width:  900px;}
+.w-95-px {width:  950px;}
+.w-100-px {width:  1000px;}
+
 /*Min width*/
 .min-w-1 {min-width: 100px}
 .min-w-2 {min-width: 200px}
@@ -132,6 +153,27 @@
 .h-90 {height:  90%;}
 .h-95 {height:  95%;}
 .h-100 {height:  100%;}
+
+.h-5-px {height:  50px;}
+.h-10-px {height:  100px;}
+.h-15-px {height:  150px;}
+.h-20-px {height:  200px;}
+.h-25-px {height:  250px;}
+.h-30-px {height:  300px;}
+.h-35-px {height:  350px;}
+.h-40-px {height:  400px;}
+.h-45-px {height:  450px;}
+.h-50-px {height:  500px;}
+.h-55-px {height:  550px;}
+.h-60-px {height:  600px;}
+.h-65-px {height:  650px;}
+.h-70-px {height:  700px;}
+.h-75-px {height:  750px;}
+.h-80-px {height:  800px;}
+.h-85-px {height:  850px;}
+.h-90-px {height:  900px;}
+.h-95-px {height:  950px;}
+.h-100-px {height:  1000px;}
 
 /*Min height*/
 .min-h-1 {min-height: 100px;}

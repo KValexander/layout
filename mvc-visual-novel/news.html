@@ -15,6 +15,10 @@
 	
 	<!-- Script -->
 	<script src="script.js"></script>
+	<!-- Discussion -->
+	<script src="discussion.js"></script>
+	<!-- Popup -->
+	<script src="popup.js"></script>
 </head>
 <body>
 	
@@ -29,12 +33,12 @@
 			</div>
 			<nav>
 				<ul class="top">
-					<li><a href="news.html" class="current">Новости</a></li>
+					<li><a href="news.html">Новости</a></li>
 					<li><a href="">Статьи</a></li>
 					<li><a href="">Дискуссии</a></li>
 					<li><a href="">Визуальные новеллы</a></li>
-					<li><a href="">Регистрация</a></li>
-					<li><a href="">Войти</a></li>
+					<li><a onclick="popup.auth('register')">Регистрация</a></li>
+					<li><a onclick="popup.auth('login')">Вход</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -91,5 +95,7 @@
 		</div>
 	</footer>
 
+	<!-- Popup -->
+	<div id="popup"></div>
 </body>
 </html>

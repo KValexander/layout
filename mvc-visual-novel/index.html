@@ -53,8 +53,8 @@
 							<li><a href="">Статьи</a></li>
 							<li><a href="">Дискуссии</a></li>
 							<li><a href="">Визуальные новеллы</a></li>
-							<li><a href="">Регистрация</a></li>
-							<li><a href="">Войти</a></li>
+							<li><a onclick="popup.auth('register')">Регистрация</a></li>
+							<li><a onclick="popup.auth('login')">Вход</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -113,70 +113,82 @@
 			<div class="horizontal-slider">
 				<div class="head">Лучшие статьи за неделю</div>
 				<div class="flex no-wrap overflow-x-auto">
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://mocah.org/uploads/posts/4536354-anime-visual-novel-love-money-rock039n039roll-visual-novel.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://mocah.org/uploads/posts/4536354-anime-visual-novel-love-money-rock039n039roll-visual-novel.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://mocah.org/uploads/posts/4536354-anime-visual-novel-love-money-rock039n039roll-visual-novel.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://mocah.org/uploads/posts/4536354-anime-visual-novel-love-money-rock039n039roll-visual-novel.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://mocah.org/uploads/posts/4536354-anime-visual-novel-love-money-rock039n039roll-visual-novel.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://mocah.org/uploads/posts/4536354-anime-visual-novel-love-money-rock039n039roll-visual-novel.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
 				</div>
@@ -190,81 +202,81 @@
 				<div class="recommendations">
 					<div class="head">Лучшие новеллы за неделю</div>
 					<div class="flex w-100 no-wrap overflow-y-auto">
-						<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
+						<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
 							<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 							<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 								<div class="bg-alpha-dark p-1">4.8</div>
 							</div>
 							<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-								<p><a href="" class="color-light">Название новеллы</a></p>
+								<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 								<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-								<p>Жанры: жанр, жа...</p>
-								<p>Теги: тег, тег, те...</p>
+								<p>Жанры: жанр, жанр</p>
+								<p>Теги: тег, тег, тег, тег</p>
 								<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 							</div>
 						</div>
-						<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
-							<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
-							<div class="top w-100 z-2 absolute flex justify-between">
+						<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
+							<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg" alt="">
+							<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 								<div class="bg-alpha-dark p-1">4.8</div>
 							</div>
 							<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-								<p><a href="" class="color-light">Название новеллы</a></p>
+								<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 								<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-								<p>Жанры: жанр, жа...</p>
-								<p>Теги: тег, тег, те...</p>
+								<p>Жанры: жанр, жанр</p>
+								<p>Теги: тег, тег, тег, тег</p>
 								<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 							</div>
 						</div>
-						<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
+						<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
 							<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 							<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 								<div class="bg-alpha-dark p-1">4.8</div>
 							</div>
 							<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-								<p><a href="" class="color-light">Название новеллы</a></p>
+								<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 								<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-								<p>Жанры: жанр, жа...</p>
-								<p>Теги: тег, тег, те...</p>
+								<p>Жанры: жанр, жанр</p>
+								<p>Теги: тег, тег, тег, тег</p>
 								<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 							</div>
 						</div>
-						<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
-							<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
-							<div class="top w-100 z-2 absolute flex justify-between">
+						<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
+							<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg" alt="">
+							<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 								<div class="bg-alpha-dark p-1">4.8</div>
 							</div>
 							<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-								<p><a href="" class="color-light">Название новеллы</a></p>
+								<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 								<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-								<p>Жанры: жанр, жа...</p>
-								<p>Теги: тег, тег, те...</p>
+								<p>Жанры: жанр, жанр</p>
+								<p>Теги: тег, тег, тег, тег</p>
 								<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 							</div>
 						</div>
-						<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
+						<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
 							<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 							<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 								<div class="bg-alpha-dark p-1">4.8</div>
 							</div>
 							<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-								<p><a href="" class="color-light">Название новеллы</a></p>
+								<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 								<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-								<p>Жанры: жанр, жа...</p>
-								<p>Теги: тег, тег, те...</p>
+								<p>Жанры: жанр, жанр</p>
+								<p>Теги: тег, тег, тег, тег</p>
 								<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 							</div>
 						</div>
-						<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
-							<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
-							<div class="top w-100 z-2 absolute flex justify-between">
+						<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
+							<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg" alt="">
+							<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 								<div class="bg-alpha-dark p-1">4.8</div>
 							</div>
 							<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-								<p><a href="" class="color-light">Название новеллы</a></p>
+								<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 								<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-								<p>Жанры: жанр, жа...</p>
-								<p>Теги: тег, тег, те...</p>
+								<p>Жанры: жанр, жанр</p>
+								<p>Теги: тег, тег, тег, тег</p>
 								<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 							</div>
 						</div>
@@ -313,121 +325,121 @@
 								</div>
 							</div>
 							<!-- End search -->
-							<div class="net tc-3 h-100 overflow-hidden max-h-6">
-								<div class="preview_novel relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+							<div class="net tc-3 h-100 overflow-hidden overflow-y-auto max-h-6">
+								<div class="preview_novel h-20-px relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
 									<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 									<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 										<div class="bg-alpha-blue p-1">4.8</div>
 									</div>
 									<div class="bottom bg-alpha-blue z-1 p-05 w-100 h-100">
-										<p><a href="" class="color-light">Название новеллы</a></p>
+										<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 										<p><a onclick="discussion.novel()">Дискуссии новеллы</a></p>
 										<p>Жанры: жанр, жан...</p>
 										<p>Теги: тег, тег, тег...</p>
 										<p><a onclick="discussion.comments()">Комментарии новеллы</a></p>
 									</div>
 								</div>
-								<div class="preview_novel relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<div class="preview_novel h-20-px relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
 									<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
 									<div class="top w-100 z-2 absolute flex justify-between">
 										<div class="bg-alpha-red p-1">4.8</div>
 									</div>
 									<div class="bottom bg-alpha-red z-1 p-05 w-100 h-100">
-										<p><a href="" class="color-light">Название новеллы</a></p>
+										<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 										<p><a onclick="discussion.novel()">Дискуссии новеллы</a></p>
 										<p>Жанры: жанр, жа...</p>
 										<p>Теги: тег, тег, те...</p>
 										<p><a onclick="discussion.comments()">Комментарии новеллы</a></p>
 									</div>
 								</div>
-								<div class="preview_novel relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<div class="preview_novel h-20-px relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
 									<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 									<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 										<div class="bg-alpha-blue p-1">4.8</div>
 									</div>
 									<div class="bottom bg-alpha-blue z-1 p-05 w-100 h-100">
-										<p><a href="" class="color-light">Название новеллы</a></p>
+										<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 										<p><a onclick="discussion.novel()">Дискуссии новеллы</a></p>
-										<p>Жанры: жанр, жа...</p>
-										<p>Теги: тег, тег, те...</p>
+										<p>Жанры: жанр, жан...</p>
+										<p>Теги: тег, тег, тег...</p>
 										<p><a onclick="discussion.comments()">Комментарии новеллы</a></p>
 									</div>
 								</div>
-								<div class="preview_novel relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<div class="preview_novel h-20-px relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
 									<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
 									<div class="top w-100 z-2 absolute flex justify-between">
 										<div class="bg-alpha-red p-1">4.8</div>
 									</div>
 									<div class="bottom bg-alpha-red z-1 p-05 w-100 h-100">
-										<p><a href="" class="color-light">Название новеллы</a></p>
+										<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 										<p><a onclick="discussion.novel()">Дискуссии новеллы</a></p>
 										<p>Жанры: жанр, жа...</p>
 										<p>Теги: тег, тег, те...</p>
 										<p><a onclick="discussion.comments()">Комментарии новеллы</a></p>
 									</div>
 								</div>
-								<div class="preview_novel relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<div class="preview_novel h-20-px relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
 									<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 									<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 										<div class="bg-alpha-blue p-1">4.8</div>
 									</div>
 									<div class="bottom bg-alpha-blue z-1 p-05 w-100 h-100">
-										<p><a href="" class="color-light">Название новеллы</a></p>
+										<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 										<p><a onclick="discussion.novel()">Дискуссии новеллы</a></p>
-										<p>Жанры: жанр, жа...</p>
-										<p>Теги: тег, тег, те...</p>
+										<p>Жанры: жанр, жан...</p>
+										<p>Теги: тег, тег, тег...</p>
 										<p><a onclick="discussion.comments()">Комментарии новеллы</a></p>
 									</div>
 								</div>
-								<div class="preview_novel relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<div class="preview_novel h-20-px relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
 									<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
 									<div class="top w-100 z-2 absolute flex justify-between">
 										<div class="bg-alpha-red p-1">4.8</div>
 									</div>
 									<div class="bottom bg-alpha-red z-1 p-05 w-100 h-100">
-										<p><a href="" class="color-light">Название новеллы</a></p>
+										<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 										<p><a onclick="discussion.novel()">Дискуссии новеллы</a></p>
 										<p>Жанры: жанр, жа...</p>
 										<p>Теги: тег, тег, те...</p>
 										<p><a onclick="discussion.comments()">Комментарии новеллы</a></p>
 									</div>
 								</div>
-								<div class="preview_novel relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<div class="preview_novel h-20-px relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
 									<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 									<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 										<div class="bg-alpha-blue p-1">4.8</div>
 									</div>
 									<div class="bottom bg-alpha-blue z-1 p-05 w-100 h-100">
-										<p><a href="" class="color-light">Название новеллы</a></p>
+										<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 										<p><a onclick="discussion.novel()">Дискуссии новеллы</a></p>
-										<p>Жанры: жанр, жа...</p>
-										<p>Теги: тег, тег, те...</p>
+										<p>Жанры: жанр, жан...</p>
+										<p>Теги: тег, тег, тег...</p>
 										<p><a onclick="discussion.comments()">Комментарии новеллы</a></p>
 									</div>
 								</div>
-								<div class="preview_novel relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<div class="preview_novel h-20-px relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
 									<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
 									<div class="top w-100 z-2 absolute flex justify-between">
 										<div class="bg-alpha-red p-1">4.8</div>
 									</div>
 									<div class="bottom bg-alpha-red z-1 p-05 w-100 h-100">
-										<p><a href="" class="color-light">Название новеллы</a></p>
+										<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 										<p><a onclick="discussion.novel()">Дискуссии новеллы</a></p>
 										<p>Жанры: жанр, жа...</p>
 										<p>Теги: тег, тег, те...</p>
 										<p><a onclick="discussion.comments()">Комментарии новеллы</a></p>
 									</div>
 								</div>
-								<div class="preview_novel relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
+								<div class="preview_novel h-20-px relative flex items-end post hover-scale-img-11 overflow-hidden color-light">
 									<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 									<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 										<div class="bg-alpha-blue p-1">4.8</div>
 									</div>
 									<div class="bottom bg-alpha-blue z-1 p-05 w-100 h-100">
-										<p><a href="" class="color-light">Название новеллы</a></p>
+										<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 										<p><a onclick="discussion.novel()">Дискуссии новеллы</a></p>
-										<p>Жанры: жанр, жа...</p>
-										<p>Теги: тег, тег, те...</p>
+										<p>Жанры: жанр, жан...</p>
+										<p>Теги: тег, тег, тег...</p>
 										<p><a onclick="discussion.comments()">Комментарии новеллы</a></p>
 									</div>
 								</div>
@@ -453,70 +465,82 @@
 					<div class="head">Последнее</div>
 					<div class="container max-h-10">
 						<!-- Preview articles -->
-						<div class="relative min-h-2 w-100 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
+						<div class="preview_article relative w-100 h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
 							<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-							<div class="w-100 z-2 absolute flex justify-between">
+							<div class="top w-100 z-2 absolute flex justify-between">
 								<div class="bg-alpha-yellow p-1">+20</div>
-								<div class="bg-alpha-yellow p-1">Категория</div>
+								<div class="bg-alpha-yellow p-1"><a class="color-dark">Категория</a></div>
 							</div>
-							<div class="bg-alpha-yellow z-1 p-1 w-100">
+							<div class="bottom w-100 bg-alpha-yellow z-1 p-1">
 								<h3><a href="" class="color-dark">Статья</a></h3>
 								<p>Краткое содержание статьи</p>
+								<p>Теги: тег, тег, тег</p>
+								<p>Дата и время создания</p>
 							</div>
 						</div><br>
-						<div class="relative min-h-2 w-100 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
+						<div class="preview_article relative w-100 h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
 							<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-							<div class="w-100 z-2 absolute flex justify-between">
+							<div class="top w-100 z-2 absolute flex justify-between">
 								<div class="bg-alpha-yellow p-1">+20</div>
-								<div class="bg-alpha-yellow p-1">Категория</div>
+								<div class="bg-alpha-yellow p-1"><a class="color-dark">Категория</a></div>
 							</div>
-							<div class="bg-alpha-yellow z-1 p-1 w-100">
+							<div class="bottom w-100 bg-alpha-yellow z-1 p-1">
 								<h3><a href="" class="color-dark">Статья</a></h3>
 								<p>Краткое содержание статьи</p>
+								<p>Теги: тег, тег, тег</p>
+								<p>Дата и время создания</p>
 							</div>
 						</div><br>
-						<div class="relative min-h-2 w-100 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
+						<div class="preview_article relative w-100 h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
 							<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-							<div class="w-100 z-2 absolute flex justify-between">
+							<div class="top w-100 z-2 absolute flex justify-between">
 								<div class="bg-alpha-yellow p-1">+20</div>
-								<div class="bg-alpha-yellow p-1">Категория</div>
+								<div class="bg-alpha-yellow p-1"><a class="color-dark">Категория</a></div>
 							</div>
-							<div class="bg-alpha-yellow z-1 p-1 w-100">
+							<div class="bottom w-100 bg-alpha-yellow z-1 p-1">
 								<h3><a href="" class="color-dark">Статья</a></h3>
 								<p>Краткое содержание статьи</p>
+								<p>Теги: тег, тег, тег</p>
+								<p>Дата и время создания</p>
 							</div>
 						</div><br>
-						<div class="relative min-h-2 w-100 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
+						<div class="preview_article relative w-100 h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
 							<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-							<div class="w-100 z-2 absolute flex justify-between">
+							<div class="top w-100 z-2 absolute flex justify-between">
 								<div class="bg-alpha-yellow p-1">+20</div>
-								<div class="bg-alpha-yellow p-1">Категория</div>
+								<div class="bg-alpha-yellow p-1"><a class="color-dark">Категория</a></div>
 							</div>
-							<div class="bg-alpha-yellow z-1 p-1 w-100">
+							<div class="bottom w-100 bg-alpha-yellow z-1 p-1">
 								<h3><a href="" class="color-dark">Статья</a></h3>
 								<p>Краткое содержание статьи</p>
+								<p>Теги: тег, тег, тег</p>
+								<p>Дата и время создания</p>
 							</div>
 						</div><br>
-						<div class="relative min-h-2 w-100 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
+						<div class="preview_article relative w-100 h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
 							<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-							<div class="w-100 z-2 absolute flex justify-between">
+							<div class="top w-100 z-2 absolute flex justify-between">
 								<div class="bg-alpha-yellow p-1">+20</div>
-								<div class="bg-alpha-yellow p-1">Категория</div>
+								<div class="bg-alpha-yellow p-1"><a class="color-dark">Категория</a></div>
 							</div>
-							<div class="bg-alpha-yellow z-1 p-1 w-100">
+							<div class="bottom w-100 bg-alpha-yellow z-1 p-1">
 								<h3><a href="" class="color-dark">Статья</a></h3>
 								<p>Краткое содержание статьи</p>
+								<p>Теги: тег, тег, тег</p>
+								<p>Дата и время создания</p>
 							</div>
 						</div><br>
-						<div class="relative min-h-2 w-100 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
+						<div class="preview_article relative w-100 h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
 							<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-							<div class="w-100 z-2 absolute flex justify-between">
+							<div class="top w-100 z-2 absolute flex justify-between">
 								<div class="bg-alpha-yellow p-1">+20</div>
-								<div class="bg-alpha-yellow p-1">Категория</div>
+								<div class="bg-alpha-yellow p-1"><a class="color-dark">Категория</a></div>
 							</div>
-							<div class="bg-alpha-yellow z-1 p-1 w-100">
+							<div class="bottom w-100 bg-alpha-yellow z-1 p-1">
 								<h3><a href="" class="color-dark">Статья</a></h3>
 								<p>Краткое содержание статьи</p>
+								<p>Теги: тег, тег, тег</p>
+								<p>Дата и время создания</p>
 							</div>
 						</div><br>
 						<p><a href="" class="color-blue">Загрузить ещё</a></p>
@@ -526,75 +550,86 @@
 			</div>
 			<!-- End latest additions -->
 
-
 			<!-- Horizontal slider -->
 			<div class="horizontal-slider">
 				<div class="head">Лучшие статьи за всё время</div>
 				<div class="flex no-wrap overflow-x-auto">
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://phonoteka.org/uploads/posts/2021-04/1619169999_31-phonoteka_org-p-fon-dlya-zum-konferentsii-35.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://phonoteka.org/uploads/posts/2021-04/1619169999_31-phonoteka_org-p-fon-dlya-zum-konferentsii-35.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://phonoteka.org/uploads/posts/2021-04/1619169999_31-phonoteka_org-p-fon-dlya-zum-konferentsii-35.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://phonoteka.org/uploads/posts/2021-04/1619169999_31-phonoteka_org-p-fon-dlya-zum-konferentsii-35.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://phonoteka.org/uploads/posts/2021-04/1619169999_31-phonoteka_org-p-fon-dlya-zum-konferentsii-35.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
-					<div class="relative min-h-2 max-h-2 overflow-hidden flex items-end mr-1 no-shrink color-dark hover-scale-img-11">
-						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612426083_137-p-anime-fon-korichnevii-estetika-181.jpg" alt="">
-						<div class="w-100 z-2 absolute flex justify-between">
+					<div class="preview_article relative w-30-px h-20-px overflow-hidden flex mr-1 no-shrink color-dark hover-scale-img-11">
+						<img class="absolute w-100 h-100 z-0 transition-2 filter-bright-6" src="https://phonoteka.org/uploads/posts/2021-04/1619169999_31-phonoteka_org-p-fon-dlya-zum-konferentsii-35.jpg" alt="">
+						<div class="top w-100 z-2 absolute flex justify-between">
 							<div class="bg-alpha-light p-1">+20</div>
-							<div class="bg-alpha-light p-1">Категория</div>
+							<div class="bg-alpha-light p-1"><a class="color-dark">Категория</a></div>
 						</div>
-						<div class="bg-alpha-light z-1 p-1">
+						<div class="bottom w-100 bg-alpha-light z-1 p-1">
 							<h3><a href="" class="color-dark">Статья</a></h3>
 							<p>Краткое содержание статьи</p>
+							<p>Теги: тег, тег, тег</p>
+							<p>Дата и время создания</p>
 						</div>
 					</div>
 				</div>
@@ -605,81 +640,81 @@
 			<div class="recommendations mb-3">
 				<div class="head">Лучшие новеллы за всё время</div>
 				<div class="flex w-100 no-wrap overflow-y-auto">
-					<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
+					<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
 						<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 						<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 							<div class="bg-alpha-dark p-1">4.8</div>
 						</div>
 						<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-							<p><a href="" class="color-light">Название новеллы</a></p>
+							<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 							<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-							<p>Жанры: жанр, жа...</p>
-							<p>Теги: тег, тег, те...</p>
+							<p>Жанры: жанр, жанр</p>
+							<p>Теги: тег, тег, тег, тег</p>
 							<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 						</div>
 					</div>
-					<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
-						<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
-						<div class="top w-100 z-2 absolute flex justify-between">
+					<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
+						<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg" alt="">
+						<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 							<div class="bg-alpha-dark p-1">4.8</div>
 						</div>
 						<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-							<p><a href="" class="color-light">Название новеллы</a></p>
+							<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 							<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-							<p>Жанры: жанр, жа...</p>
-							<p>Теги: тег, тег, те...</p>
+							<p>Жанры: жанр, жанр</p>
+							<p>Теги: тег, тег, тег, тег</p>
 							<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 						</div>
 					</div>
-					<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
+					<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
 						<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 						<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 							<div class="bg-alpha-dark p-1">4.8</div>
 						</div>
 						<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-							<p><a href="" class="color-light">Название новеллы</a></p>
+							<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 							<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-							<p>Жанры: жанр, жа...</p>
-							<p>Теги: тег, тег, те...</p>
+							<p>Жанры: жанр, жанр</p>
+							<p>Теги: тег, тег, тег, тег</p>
 							<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 						</div>
 					</div>
-					<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
-						<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
-						<div class="top w-100 z-2 absolute flex justify-between">
+					<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
+						<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg" alt="">
+						<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 							<div class="bg-alpha-dark p-1">4.8</div>
 						</div>
 						<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-							<p><a href="" class="color-light">Название новеллы</a></p>
+							<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 							<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-							<p>Жанры: жанр, жа...</p>
-							<p>Теги: тег, тег, те...</p>
+							<p>Жанры: жанр, жанр</p>
+							<p>Теги: тег, тег, тег, тег</p>
 							<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 						</div>
 					</div>
-					<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
+					<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
 						<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://www.drcommodore.it/wp-content/uploads/2019/11/Bis-min.jpg" alt="">
 						<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 							<div class="bg-alpha-dark p-1">4.8</div>
 						</div>
 						<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-							<p><a href="" class="color-light">Название новеллы</a></p>
+							<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 							<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-							<p>Жанры: жанр, жа...</p>
-							<p>Теги: тег, тег, те...</p>
+							<p>Жанры: жанр, жанр</p>
+							<p>Теги: тег, тег, тег, тег</p>
 							<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 						</div>
 					</div>
-					<div class="preview_novel max-h-2 min-h-2 no-shrink relative flex items-end post hover-scale-img-11 overflow-hidden color-light mr-1">
-						<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg"  alt="">
-						<div class="top w-100 z-2 absolute flex justify-between">
+					<div class="preview_novel w-20-px h-20-px no-shrink relative flex post hover-scale-img-11 overflow-hidden color-light mr-1">
+						<img class="absolute w-100 h-100 z-0 filter-bright-6 transition-2" src="https://pbs.twimg.com/media/Exfg3KtVcAQL3YC.jpg" alt="">
+						<div class="top transition-2 absolute w-100 z-2 flex justify-between">
 							<div class="bg-alpha-dark p-1">4.8</div>
 						</div>
 						<div class="bottom bg-alpha-dark z-1 p-05 w-100 h-100">
-							<p><a href="" class="color-light">Название новеллы</a></p>
+							<p><a href="" class="color-light"><b>Название новеллы</b></a></p>
 							<p><a onclick="discussion.novel()" class="color-light">Дискуссии новеллы</a></p>
-							<p>Жанры: жанр, жа...</p>
-							<p>Теги: тег, тег, те...</p>
+							<p>Жанры: жанр, жанр</p>
+							<p>Теги: тег, тег, тег, тег</p>
 							<p><a onclick="discussion.comments()" class="color-light">Комментарии новеллы</a></p>
 						</div>
 					</div>
@@ -748,7 +783,7 @@
 	</footer>
 	<!-- End footer -->
 
-	<!-- Bufer -->
-	<div id="additional"></div>
+	<!-- Popup -->
+	<div id="popup"></div>
 </body>
 </html>

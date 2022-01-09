@@ -119,8 +119,8 @@ input, button {
 	padding: 0 10px;
 	overflow: hidden;
 	font-size:  14pt;
-	border:  solid 1px #333;
-	background-color:  #eeede7;
+	border-radius: 5px;
+	border:  solid 1px #00adc7;
 	font-family: Comfortaa-Regular;
 	box-shadow: 0 0 1px 1px rgba(0,0,0,0);
 }
@@ -133,7 +133,7 @@ input[type=button], button {
 	border:  none;
 	color:  white;
 	cursor:  pointer;
-	background-color: #b12650;
+	background-color: #00adc7;
 }
 
 input[type=button]:hover, button:hover {
@@ -232,6 +232,21 @@ div.horizontal-slider {
 	overflow-x: auto;
 }
 
+/*Preview article*/
+div.preview_article div.bottom {
+	position: relative;
+	top: 65%;
+	transition: .2s;
+}
+
+/*div.preview_article:hover div.top {
+	display: none;
+}*/
+
+div.preview_article:hover div.bottom {
+	top: 40px;
+}
+
 /*Preview novel*/
 div.preview_novel div.bottom {
 	position: relative;
@@ -267,29 +282,29 @@ div.paginator:hover {
 
 /*Additional*/
 /*Popup*/
-div#additional div.mask {
-	overflow: auto;
-	z-index: 99;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+div#popup div.mask {
 	position:  fixed;
 	top: 0;
 	left: 0;
+	z-index: 99;
 	width: 100vw;
 	height: 100vh;
 	background-color:  rgba(0,0,0,0.7);
 }
-div#additional div.popup {
-	position: relative;
-	background-color:  white;
-	max-width: 1200px;
-	line-height: 0;
-	z-index:  999;
-	padding: 10px;
+div#popup div.popup {
+	z-index: 99;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
 }
 
-div#additional div.popup div.close {
+/*Close*/
+div#popup div.popup div.close {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -298,16 +313,123 @@ div#additional div.popup div.close {
 	justify-content: flex-end;
 }
 
-div#additional div.popup div.close div {
+div#popup div.popup div.close div {
 	position: relative;
+	border-radius: 3px;
 	width: 40px;
 	height: 40px;
-	top: -15px;
-	left: 15px;
+	top: -16px;
+	left: 16px;
 	transition: .2s;
 	background-color: #00adc7;
 }
 
-div#additional div.popup div.close div:hover {
+div#popup div.popup div.close div:hover {
+	background-color: #b12650;
+}
+
+/*Popup image*/
+div#popup div.popup_image {
+	position: relative;
+	max-width: 1200px;
+	line-height: 0;
+}
+
+div#popup div.popup_image img {
+	border-radius: 5px;
+}
+
+/*Popup auth*/
+div#popup div.popup_auth {
+	display: flex;
+	overflow: hidden;
+	width: 600px;
+	border-radius: 5px;
+	background-color:  white;
+}
+
+div#popup div.popup_auth h2,
+div#popup div.popup_auth a {
+	color: #00adc7;
+}
+
+div#popup div.popup_auth input {
+	width: 100%;
+	margin: 10px 0;
+	border: none;
+	height: 50px;
+	background-color: #eeede7;
+}
+
+div#popup div.popup_auth button {
+	width: 100%;
+	margin: 20px 0 10px;
+	height: 50px;
+}
+
+div#popup div.popup_auth div.active {
+	padding: 40px !important;
+	width: 100%;
+}
+
+div#popup div.popup_auth div.switch,
+div#popup div.popup_auth div.close {
+	position: relative;
+	border-radius: 5px;
+	height: 40px;
+	width: 30px;
+	transition: .2s;
+}
+div#popup div.popup_auth div.close div {
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+div#popup div.popup_auth div.switches {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+div#popup div.popup_auth div.login {
+	position: relative;
+	padding: 10px;
+}
+div#popup div.popup_auth div.login div.switch {
+	background-color: #00adc7;
+}
+
+div#popup div.popup_auth div.login div.switch:hover {
+	background-color: #b12650;
+}
+
+div#popup div.popup_auth div.register {
+	position: relative;
+	padding: 10px;
+	background-color: #00adc7;
+}
+
+div#popup div.popup_auth div.register h2,
+div#popup div.popup_auth div.register a {
+	color: #eeede7;
+}
+div#popup div.popup_auth div.register div.switch,
+div#popup div.popup_auth div.register div.close div {
+	background-color: #eeede7;
+}
+
+div#popup div.popup_auth div.register div.switch:hover,
+div#popup div.popup_auth div.register div.close div:hover {
+	background-color: #b12650;
+}
+
+div#popup div.popup_auth div.register button {
+	color: #00adc7;
+	background-color: #eeede7;
+}
+
+div#popup div.popup_auth div.register button:hover {
+	color: #eeede7;
 	background-color: #b12650;
 }

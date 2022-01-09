@@ -1,4 +1,4 @@
-/*Connecting fonts*/
+Connecting fonts*/
 @font-face {
 	font-family: "Comfortaa-Light";
 	src:  url("fonts/Comfortaa-Light.ttf");
@@ -42,9 +42,9 @@ body {
 	background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: #555;    /* цвет плашки */
-  border-radius: 5px;       /* закругления плашки */
-  border: 2px solid #eeede7;  /* padding вокруг плашки */
+	background-color: #555;    /* цвет плашки */
+	border-radius: 5px;       /* закругления плашки */
+	border: 2px solid #eeede7;  /* padding вокруг плашки */
 }
 
 /*Menu*/
@@ -232,6 +232,7 @@ div.horizontal-slider {
 	overflow-x: auto;
 }
 
+/*Preview novel*/
 div.preview_novel div.bottom {
 	position: relative;
 	top: 80%;
@@ -246,6 +247,7 @@ div.preview_novel:hover div.bottom {
 	top: 0px;
 }
 
+/*Paginator*/
 div.paginator {
 	cursor: pointer;
 	min-width: 30px;
@@ -260,5 +262,52 @@ div.paginator.current {
 }
 
 div.paginator:hover {
+	background-color: #b12650;
+}
+
+/*Additional*/
+/*Popup*/
+div#additional div.mask {
+	overflow: auto;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position:  fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color:  rgba(0,0,0,0.7);
+}
+div#additional div.popup {
+	position: relative;
+	background-color:  white;
+	max-width: 1200px;
+	line-height: 0;
+	z-index:  999;
+	padding: 10px;
+}
+
+div#additional div.popup div.close {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+div#additional div.popup div.close div {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	top: -15px;
+	left: 15px;
+	transition: .2s;
+	background-color: #00adc7;
+}
+
+div#additional div.popup div.close div:hover {
 	background-color: #b12650;
 }

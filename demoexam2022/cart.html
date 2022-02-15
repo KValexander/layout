@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Интернет-магазин</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+		function minus(id) {
+			n = document.getElementById(id);
+			
+			if(n.innerHTML <= 1) return;
+			
+			e = parseInt(n.innerHTML) - 1;
+			
+			n.innerHTML = e;
+
+			return false;
+		}
+
+		function plus(id) {
+			n = document.getElementById(id);
+			
+			e = parseInt(n.innerHTML) + 1;
+			
+			n.innerHTML = e;
+
+			return false;
+		}
+	</script>
+</head>
+<body>
+
+	<header>
+		<div class="top">
+			<img src="logo/logo.png" alt="">
+			<a href="index.html">
+				<h1>Copy Star</h1>
+			</a>
+		</div>
+		<div class="content">
+			<ul>
+				<li><a href="index.html">О нас</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+				<li><a href="admin.html">Заказы</a></li>
+				<li><a href="where.html">Гда нас найти?</a></li>
+				<li><a href="index.html">Выход</a></li>
+				<li><a href="index.html#login"><button>Вход</button></a></li>
+				<li><a href="index.html#register"><button>Регистрация</button></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="message"></div>
+
+	<main>
+		<div class="content">
+
+			<div class="head">Ваша корзина</div>
+			<!-- <h3 class="text-center">Корзина пуста</h3> -->
+			<div class="wrap">
+				<div class="row">
+					<div class="col">
+						<img src="logo/logo.png" alt="">
+						<div class="row">
+							<h3><a href="product.html">ФТовар</a></h3>
+							<p>230$</p>
+						</div>
+						<div class="row">
+							<p><a onclick="return minus('c1')">Убрать</a></p>
+							<p id="c1">1</p>
+							<p><a onclick="return plus('c1')">Добавить</a></p>
+						</div>
+						<p class="text-right"><a href="" class="text-small">Удалить из корзины</a></p>
+					</div>
+					<div class="col">
+						<img src="logo/logo.png" alt="">
+						<div class="row">
+							<h3><a href="product.html">АТовар</a></h3>
+							<p>400$</p>
+						</div>
+						<div class="row">
+							<p><a onclick="return minus('c2')">Убрать</a></p>
+							<p id="c2">1</p>
+							<p><a onclick="return plus('c2')">Добавить</a></p>
+						</div>
+						<p class="text-right"><a href="" class="text-small">Удалить из корзины</a></p>
+					</div>
+					<div class="col">
+						<img src="logo/logo.png" alt="">
+						<div class="row">
+							<h3><a href="product.html">БТовар</a></h3>
+							<p>390$</p>
+						</div>
+						<div class="row">
+							<p><a onclick="return minus('c3')">Убрать</a></p>
+							<p id="c3">1</p>
+							<p><a onclick="return plus('c3')">Добавить</a></p>
+						</div>
+						<p class="text-right"><a href="" class="text-small">Удалить из корзины</a></p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<p>Общая стоимость:</p>
+					<h2>1020$</h2>
+				</div>
+				<form class="w100" method="POST">
+					<input type="password" placeholder="Ваш пароль" name="password" required>
+					<button>Сформировать заказ</button>
+				</form>
+			</div>
+
+			<div class="head">Ваши заказы</div>
+			<!-- <h3 class="text-center">Список заказов пуст</h3> -->
+			<div class="row">
+				<div class="col">
+					<div class="row">
+						<h2>Заказ 23134</h2>
+						<p class="text-right"><a href="" class="text-small">Удалить заказ</a></p>
+					</div>
+					<div class="row">
+						<p>Статус: <b>Новый</b></p>
+						<p>Количество товаров: <b>4</b></p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="row">
+						<h2>Заказ 54356</h2>
+					</div>
+					<div class="row">
+						<p>Статус: <b>Подтверждённый</b></p>
+						<p>Количество товаров: <b>1</b></p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="row">
+						<h2>Заказ 75354</h2>
+					</div>
+					<div class="row">
+						<p>Статус: <b>Отклонённый</b></p>
+						<p>Количество товаров: <b>24</b></p>
+						<h3>Причина отклонения:</h3>
+						<p>Слишком много товаров</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="row">
+						<h2>Заказ 75354</h2>
+					</div>
+					<div class="row">
+						<p>Статус: <b>Отклонённый</b></p>
+						<p>Количество товаров: <b>24</b></p>
+						<h3>Причина отклонения:</h3>
+						<p>Слишком много товаров</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="row">
+						<h2>Заказ 23134</h2>
+						<p class="text-right"><a href="" class="text-small">Удалить заказ</a></p>
+					</div>
+					<div class="row">
+						<p>Статус: <b>Новый</b></p>
+						<p>Количество товаров: <b>4</b></p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="row">
+						<h2>Заказ 54356</h2>
+					</div>
+					<div class="row">
+						<p>Статус: <b>Подтверждённый</b></p>
+						<p>Количество товаров: <b>1</b></p>
+					</div>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="row">
+					<h2>Заказ 23134</h2>
+					<p class="text-right"><a href="" class="text-small">Удалить заказ</a></p>
+				</div>
+				<div class="row">
+					<p>Статус: <b>Новый</b></p>
+					<p>Количество товаров: <b>7</b></p>
+					<p>Общая стоимость: <b>2320$</b></p>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<h3><a href="product.html">АТовар</a></h3>
+							<p>400$</p>
+						</div>
+						<div class="row">
+							<p>Количество:</p>
+							<b>2</b>
+						</div>
+					</div>
+					<div class="col">
+						<div class="row">
+							<h3><a href="product.html">БТовар</a></h3>
+							<p>390$</p>
+						</div>
+						<div class="row">
+							<p>Количество:</p>
+							<b>1</b>
+						</div>
+					</div>
+					<div class="col">
+						<div class="row">
+							<h3><a href="product.html">ВТовар</a></h3>
+							<p>380$</p>
+						</div>
+						<div class="row">
+							<p>Количество:</p>
+							<b>3</b>
+						</div>
+					</div>
+					<div class="col">
+						<div class="row">
+							<h3><a href="product.html">ГТовар</a></h3>
+							<p>370$</p>
+						</div>
+						<div class="row">
+							<p>Количество:</p>
+							<b>1</b>
+						</div>
+					</div>
+				</div>
+			</div><br>
+
+			<div class="wrap">
+				<div class="row">
+					<h2>Заказ 34233</h2>
+				</div>
+				<div class="row">
+					<p>Статус: <b>Подтверждённый</b></p>
+					<p>Количество товаров: <b>3</b></p>
+					<p>Общая стоимость: <b>1190$</b></p>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<h3><a href="product.html">АТовар</a></h3>
+							<p>400$</p>
+						</div>
+						<div class="row">
+							<p>Количество:</p>
+							<b>2</b>
+						</div>
+					</div>
+					<div class="col">
+						<div class="row">
+							<h3><a href="product.html">БТовар</a></h3>
+							<p>390$</p>
+						</div>
+						<div class="row">
+							<p>Количество:</p>
+							<b>1</b>
+						</div>
+					</div>
+				</div>
+			</div><br>
+
+			<div class="wrap">
+				<div class="row">
+					<h2>Заказ 34233</h2>
+				</div>
+				<div class="row">
+					<p>Статус: <b>Отменённый</b></p>
+					<p>Количество товаров: <b>3</b></p>
+					<p>Общая стоимость: <b>1170$</b></p>
+				</div>
+				<div class="row">
+					<p>Причина отмены:</p>
+					<p><b>Количество товаров превышает имеющееся на складе</b></p>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<h3><a href="product.html">АТовар</a></h3>
+							<p>400$</p>
+						</div>
+						<div class="row">
+							<p>Количество:</p>
+							<b>1</b>
+						</div>
+					</div>
+					<div class="col">
+						<div class="row">
+							<h3><a href="product.html">БТовар</a></h3>
+							<p>390$</p>
+						</div>
+						<div class="row">
+							<p>Количество:</p>
+							<b>1</b>
+						</div>
+					</div>
+					<div class="col">
+						<div class="row">
+							<h3><a href="product.html">ВТовар</a></h3>
+							<p>380$</p>
+						</div>
+						<div class="row">
+							<p>Количество:</p>
+							<b>1</b>
+						</div>
+					</div>
+				</div>
+			</div><br>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="content">
+			<ul>
+				<li><a href="index.html">О нас</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+				<li><a href="admin.html">Заказы</a></li>
+				<li><a href="where.html">Гда нас найти?</a></li>
+				<li><a href="index.html">Выход</a></li>
+				<li><a href="index.html#login"><button>Вход</button></a></li>
+				<li><a href="index.html#register"><button>Регистрация</button></a></li>
+			</ul>
+		</div>
+	</footer>
+	
+</body>
+</html>

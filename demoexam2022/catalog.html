@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Интернет-магазин</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+		// Массив продуктов
+		let products = [];
+		// Сторона сортировки
+		let sort = false;
+		// Запись данных товаров в массив товаров
+		window.onload = function() {
+			document.querySelectorAll("#products .col").forEach(elem => {
+				products.push({
+					"image": 	elem.querySelector("img").src,
+					"name" : 	elem.querySelector("h3 a").innerHTML,
+					"price": 	elem.querySelector("p").innerHTML,
+					"year" : 	elem.querySelector("input[name=year]").value,
+					"category": elem.querySelector("input[name=category]").value,
+				});
+			});
+		}
+		// Фильтрация товаров
+		function filter(param, type) {
+			// Изменение стороны сортировки
+			sort = !sort;
+			// Клонирование массива
+			let array = JSON.parse(JSON.stringify(products));
+			// Проверка на тип фильтрации
+			switch(type) {
+				// Сортировка массива по свойству объекта
+				case "sort":
+					if(sort) array.sort((a, b) => (a[param] > b[param]) ? 1 : -1);
+					else array.sort((a, b) => (a[param] < b[param]) ? 1 : -1);
+				break;
+				// Фильтрация массива по свойству объекта
+				case "filter":
+					category = document.getElementById("category").value;
+					array = array.filter(product => product.category == category);
+				break;
+			}
+			// Вывод товаров
+			out_products(array);
+		}
+		// Вывод товаров
+		function out_products(array) {
+			let data = "";
+			array.forEach(product => {
+				data += `
+					<div class="col">
+						<img src="${product.image}" alt="">
+						<div class="row">
+							<h3><a href="product.html">${product.name}</a></h3>
+							<p>${product.price}</p>
+							<input type="hidden" value="${product.year}" name="year">
+							<input type="hidden" value="${product.category}" name="category">
+						</div>
+						<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+					</div>
+				`;
+			});
+			document.getElementById("products").innerHTML = data;
+		}
+	</script>
+</head>
+<body>
+
+	<header>
+		<div class="top">
+			<img src="logo/logo.png" alt="">
+			<a href="index.html">
+				<h1>Copy Star</h1>
+			</a>
+		</div>
+		<div class="content">
+			<ul>
+				<li><a href="index.html">О нас</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+				<li><a href="admin.html">Заказы</a></li>
+				<li><a href="where.html">Гда нас найти?</a></li>
+				<li><a href="index.html">Выход</a></li>
+				<li><a href="index.html#login"><button>Вход</button></a></li>
+				<li><a href="index.html#register"><button>Регистрация</button></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="message"></div>
+
+	<main>
+		<div class="content">
+
+			<div class="head" style="margin-bottom: 10px">Наши товары</div>
+			<div class="row" style="margin-bottom: 20px">
+				<p>
+					<span id="year" onclick="filter('year', 'sort')">Год</span> | 
+					<span id="name" onclick="filter('name', 'sort')">Наименование</span> | 
+					<span id="price" onclick="filter('price', 'sort')">Цена</span>
+				</p>
+				<select id="category" onchange="filter('category', 'filter')">
+					<option value disabled selected>Фильтрация по категориям</option>
+					<option value="Лазерный принтер">Лазерные принтеры</option>
+					<option value="Струйный принтер">Струйные принтеры</option>
+					<option value="Термопринтер">Термопринтеры</option>
+				</select>
+			</div>
+
+			<div class="row" id="products">
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">АТовар</a></h3>
+						<p>400$</p>
+						<input type="hidden" value="2022" name="year">
+						<input type="hidden" value="Лазерный принтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">БТовар</a></h3>
+						<p>390$</p>
+						<input type="hidden" value="2022" name="year">
+						<input type="hidden" value="Лазерный принтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">ВТовар</a></h3>
+						<p>380$</p>
+						<input type="hidden" value="2022" name="year">
+						<input type="hidden" value="Лазерный принтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">ГТовар</a></h3>
+						<p>370$</p>
+						<input type="hidden" value="2022" name="year">
+						<input type="hidden" value="Лазерный принтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">ДТовар</a></h3>
+						<p>360$</p>
+						<input type="hidden" value="2021" name="year">
+						<input type="hidden" value="Струйный принтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">ЕТовар</a></h3>
+						<p>350$</p>
+						<input type="hidden" value="2021" name="year">
+						<input type="hidden" value="Струйный принтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">ЖТовар</a></h3>
+						<p>340$</p>
+						<input type="hidden" value="2021" name="year">
+						<input type="hidden" value="Струйный принтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">ЗТовар</a></h3>
+						<p>330$</p>
+						<input type="hidden" value="2020" name="year">
+						<input type="hidden" value="Термопринтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">ИТовар</a></h3>
+						<p>320$</p>
+						<input type="hidden" value="2020" name="year">
+						<input type="hidden" value="Термопринтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">КТовар</a></h3>
+						<p>310$</p>
+						<input type="hidden" value="2020" name="year">
+						<input type="hidden" value="Термопринтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">ЛТовар</a></h3>
+						<p>300$</p>
+						<input type="hidden" value="2021" name="year">
+						<input type="hidden" value="Струйный принтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+				<div class="col">
+					<img src="logo/logo.png" alt="">
+					<div class="row">
+						<h3><a href="product.html">МТовар</a></h3>
+						<p>290$</p>
+						<input type="hidden" value="2020" name="year">
+						<input type="hidden" value="Термопринтер" name="category">
+					</div>
+					<div class="row">
+						<p><a href="" class="text-small">Редактировать</a></p>
+						<p><a href="" class="text-small">Удалить</a></p>
+					</div>
+					<p class="text-right"><a href="" class="text-small">В корзину</a></p>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="content">
+			<ul>
+				<li><a href="index.html">О нас</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+				<li><a href="admin.html">Заказы</a></li>
+				<li><a href="where.html">Гда нас найти?</a></li>
+				<li><a href="index.html">Выход</a></li>
+				<li><a href="index.html#login"><button>Вход</button></a></li>
+				<li><a href="index.html#register"><button>Регистрация</button></a></li>
+			</ul>
+		</div>
+	</footer>
+	
+</body>
+</html>

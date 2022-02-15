@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Интернет-магазин</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+		let orders = [];
+		window.onload = function() {
+			document.querySelectorAll("#orders .col").forEach(elem => {
+				let b = elem.querySelectorAll("b");
+				orders.push({
+					"name"   : 	elem.querySelector("h2").innerHTML,
+					"fio"    : 	b[0].innerHTML,
+					"status" : 	b[1].innerHTML,
+					"count"  : 	b[2].innerHTML,
+					"reason" : 	(reason = elem.querySelector("p:last-child")) ? reason.innerHTML : null,
+					"timestamp": elem.querySelector(".text-small").innerHTML,
+				});
+			});
+			console.log(orders);
+		}
+		// Фильтрация заказов
+		function filter(param) {
+			let array = JSON.parse(JSON.stringify(orders));
+			if(param != "all")
+				array = array.filter(order => order.status == param);
+			out_orders(array);
+		}
+		// Вывод заказов
+		function out_orders(array) {
+			let data = "";
+			array.forEach(order => {
+
+				if(status == "Подтверждённый") end = "";
+				else end = (status == "Новый") ? `
+					<form class="w100">
+						<button>Подтвердить заказ</button>
+					</form>
+					<h3 class="text-center">Отменить заказ</h3>
+					<form class="w100">
+						<textarea name="reason" placeholder="Причина отмены" required></textarea>
+						<button style="margin:0">Отменить заказ</button>
+					</form>
+				` : `
+					<h3 class="text-center">Причина отмены:</h3>
+					<p>${ order.reason }</p>
+				`;
+				
+				data += `
+					<div class="col text-left">
+						<h2>${ order.name }</h2>
+						<p>Заказчик: <b>${ order.fio }</b></p>
+						<p>Статус заказа: <b>${ order.status }</b></p>
+						<p>Количество товаров: <b>${ order.count }</b></p>
+						${ end }
+						<p class="text-small text-right">${ order.timestamp }</p>
+					</div>
+				`;
+			});
+			document.getElementById("orders").innerHTML = data;
+		}
+	</script>
+
+</head>
+<body>
+
+	<header>
+		<div class="top">
+			<img src="logo/logo.png" alt="">
+			<a href="index.html">
+				<h1>Copy Star</h1>
+			</a>
+		</div>
+		<div class="content">
+			<ul>
+				<li><a href="index.html">О нас</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+				<li><a href="admin.html">Заказы</a></li>
+				<li><a href="where.html">Гда нас найти?</a></li>
+				<li><a href="index.html">Выход</a></li>
+				<li><a href="index.html#login"><button>Вход</button></a></li>
+				<li><a href="index.html#register"><button>Регистрация</button></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="message"></div>
+
+	<main>
+		<div class="content">
+			<div class="head">Категории</div>
+			<form method="POST">
+				<div class="part">
+					<input type="text" placeholder="Название категории" name="category" required>
+					<button>Добавить</button>
+				</div>
+			</form>
+			<form meth>
+				<div class="part">
+					<select name="category_id" required>
+						<option value selected disabled>Категории</option>
+					</select>
+					<button>Удалить</button>
+				</div>
+			</form>
+
+			<div class="head">Добавить товар</div>
+			<form method="POST">
+				<input type="text" placeholder="Название" name="name" required>
+				<input type="number" placeholder="Цена" name="price" required>
+				<input type="text" placeholder="Страна производитель" name="country" required>
+				<input type="number" placeholder="Год выпуска" name="year" required>
+				<input type="text" placeholder="Модель" name="model" required>
+				<select name="category" required>
+					<option value selected disabled>Категория</option>
+				</select>
+				<input type="number" placeholder="Количество на складе" name="count" required>
+				<p class="text-left">Фотография товара</p>
+				<input type="file" name="image" required>
+				<button>Добавить</button>
+			</form>
+
+			<div class="head" style="margin-bottom: 10px">Заказы</div>
+			<p style="margin-bottom: 20px">
+				<span onclick="filter('all')">Все</span> |
+				<span onclick="filter('Новый')">Новые</span> |
+				<span onclick="filter('Подтверждённый')">Подтверждённые</span> |
+				<span onclick="filter('Отменённый')">Отменённые</span> 
+			</p>
+			<div class="row at" id="orders">
+				<div class="col text-left">
+					<h2>Заказ 21314</h2>
+					<p>Заказчик: <b>ФИО заказчика</b></p>
+					<p>Статус заказа: <b>Новый</b></p>
+					<p>Количество товаров: <b>4</b></p>
+					<form class="w100">
+						<button>Подтвердить заказ</button>
+					</form>
+					<h3 class="text-center">Отменить заказ</h3>
+					<form class="w100">
+						<textarea name="reason" placeholder="Причина отмены" required></textarea>
+						<button style="margin:0">Отменить заказ</button>
+					</form>
+					<p class="text-small text-right">2022-12-12 12:20</p>
+				</div>
+				<div class="col text-left">
+					<h2>Заказ 43251</h2>
+					<p>Заказчик: <b>ФИО заказчика</b></p>
+					<p>Статус заказа: <b>Подтверждённый</b></p>
+					<p>Количество товаров: <b>2</b></p>
+					<p class="text-small text-right">2022-12-12 12:20</p>
+				</div>
+				<div class="col text-left">
+					<h2>Заказ 53214</h2>
+					<p>Заказчик: <b>ФИО заказчика</b></p>
+					<p>Статус заказа: <b>Отменённый</b></p>
+					<p>Количество товаров: <b>7</b></p>
+					<h3 class="text-center">Причина отмены:</h3>
+					<p>Мне не понравилось, как ты заказываешь</p>
+					<p class="text-small text-right">2022-12-12 12:20</p>
+				</div>
+				<div class="col text-left">
+					<h2>Заказ 43251</h2>
+					<p>Заказчик: <b>ФИО заказчика</b></p>
+					<p>Статус заказа: <b>Подтверждённый</b></p>
+					<p>Количество товаров: <b>2</b></p>
+					<p class="text-small text-right">2022-12-12 12:20</p>
+				</div>
+				<div class="col text-left">
+					<h2>Заказ 21314</h2>
+					<p>Заказчик: <b>ФИО заказчика</b></p>
+					<p>Статус заказа: <b>Новый</b></p>
+					<p>Количество товаров: <b>4</b></p>
+					<form class="w100">
+						<button>Подтвердить заказ</button>
+					</form>
+					<h3 class="text-center">Отменить заказ</h3>
+					<form class="w100">
+						<textarea name="reason" placeholder="Причина отмены" required></textarea>
+						<button style="margin:0">Отменить заказ</button>
+					</form>
+					<p class="text-small text-right">2022-12-12 12:20</p>
+				</div>
+				<div class="col text-left">
+					<h2>Заказ 53214</h2>
+					<p>Заказчик: <b>ФИО заказчика</b></p>
+					<p>Статус заказа: <b>Отменённый</b></p>
+					<p>Количество товаров: <b>7</b></p>
+					<h3 class="text-center">Причина отмены:</h3>
+					<p>Мне не понравилось, как ты заказываешь</p>
+					<p class="text-small text-right">2022-12-12 12:20</p>
+				</div>
+				<div class="col text-left">
+					<h2>Заказ 53214</h2>
+					<p>Заказчик: <b>ФИО заказчика</b></p>
+					<p>Статус заказа: <b>Отменённый</b></p>
+					<p>Количество товаров: <b>7</b></p>
+					<h3 class="text-center">Причина отмены:</h3>
+					<p>Мне не понравилось, как ты заказываешь</p>
+					<p class="text-small text-right">2022-12-12 12:20</p>
+				</div>
+				<div class="col text-left">
+					<h2>Заказ 43251</h2>
+					<p>Заказчик: <b>ФИО заказчика</b></p>
+					<p>Статус заказа: <b>Подтверждённый</b></p>
+					<p>Количество товаров: <b>2</b></p>
+					<p class="text-small text-right">2022-12-12 12:20</p>
+				</div>
+				<div class="col text-left">
+					<h2>Заказ 21314</h2>
+					<p>Заказчик: <b>ФИО заказчика</b></p>
+					<p>Статус заказа: <b>Новый</b></p>
+					<p>Количество товаров: <b>4</b></p>
+					<form class="w100">
+						<button>Подтвердить заказ</button>
+					</form>
+					<h3 class="text-center">Отменить заказ</h3>
+					<form class="w100">
+						<textarea name="reason" placeholder="Причина отмены" required></textarea>
+						<button style="margin:0">Отменить заказ</button>
+					</form>
+					<p class="text-small text-right">2022-12-12 12:20</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="content">
+			<ul>
+				<li><a href="index.html">О нас</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+				<li><a href="admin.html">Заказы</a></li>
+				<li><a href="where.html">Гда нас найти?</a></li>
+				<li><a href="index.html">Выход</a></li>
+				<li><a href="index.html#login"><button>Вход</button></a></li>
+				<li><a href="index.html#register"><button>Регистрация</button></a></li>
+			</ul>
+		</div>
+	</footer>
+	
+</body>
+</html>

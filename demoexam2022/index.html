@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Интернет-магазин</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+		// Переменные
+		let timer, n;
+		// Запуска слайдера после загрузки страницы
+		window.onload = () => slider(n = 0);
+
+		// Функция переключения слайдов
+		function slider() {
+			// Ширина элемента
+			let width = document.querySelector("#slider .slide").offsetWidth + 20;
+
+			// Количество элементов для переключения
+			let count = document.querySelectorAll("#slider .slide").length;
+			count = 3;
+
+			// Проверки на текущий элемент
+			if(n >= count) n = 0;
+			else if(n < 0) n = count - 1;
+
+			// Смещение блока
+			document.querySelector("#slider .slides").style.left = `-${width * n}px`;
+
+			// Очистка таймера
+			clearTimeout(timer);
+
+			// Рекурсия
+			timer = setTimeout(() => slider(++n), 3000);
+		}
+	</script>
+
+</head>
+<body>
+
+	<header>
+		<div class="top">
+			<img src="logo/logo.png" alt="">
+			<a href="index.html">
+				<h1>Copy Star</h1>
+			</a>
+		</div>
+		<div class="content">
+			<ul>
+				<li><a href="index.html">О нас</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+				<li><a href="admin.html">Заказы</a></li>
+				<li><a href="where.html">Гда нас найти?</a></li>
+				<li><a href="index.html">Выход</a></li>
+				<li><a href="index.html#login"><button>Вход</button></a></li>
+				<li><a href="index.html#register"><button>Регистрация</button></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="message"></div>
+
+	<main>
+		<div class="content">
+			
+			<div class="head">Новинки компании</div>
+
+			<div id="slider">
+				<div class="slides">
+					<div class="slide col">
+						<img src="logo/logo.png" alt="">
+						<h3><a href="product.html">Товар</a></h3>
+					</div>
+					<div class="slide col">
+						<img src="logo/logo.png" alt="">
+						<h3><a href="product.html">Товар</a></h3>
+					</div>
+					<div class="slide col">
+						<img src="logo/logo.png" alt="">
+						<h3><a href="product.html">Товар</a></h3>
+					</div>
+					<div class="slide col">
+						<img src="logo/logo.png" alt="">
+						<h3><a href="product.html">Товар</a></h3>
+					</div>
+					<div class="slide col">
+						<img src="logo/logo.png" alt="">
+						<h3><a href="product.html">Товар</a></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="head" id="register">Регистрация</div>
+			<form method="POST">
+				<input type="text" placeholder="Имя" name="name" pattern="[а-яА-ЯёЁ\s\-]+" required>
+				<input type="text" placeholder="Фамилия" name="surname" pattern="[а-яА-ЯёЁ\s\-]+" required>
+				<input type="text" placeholder="Отчество" name="patronymic" pattern="[а-яА-ЯёЁ\s\-]+">
+				<input type="text" placeholder="Логин" name="login" pattern="[a-zA-Z0-9\-]+" required>
+				<input type="email" placeholder="Email" name="email" required>
+				<input type="password" placeholder="Пароль" name="password" pattern=".{6,}" required>
+				<input type="password" placeholder="Повтор пароля" name="password_repeat" required>
+				<div class="part">
+					<input type="checkbox" name="rules" required>
+					<p>Согласие с правилами регистрации</p>
+				</div>
+				<button>Зарегистрироваться</button>
+			</form>
+
+			<div class="head" id="login">Вход</div>
+			<form method="POST">
+				<input type="text" placeholder="Логин" name="login" required>
+				<input type="password" placeholder="Пароль" name="password" required>
+				<button>Войти</button>
+			</form>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="content">
+			<ul>
+				<li><a href="index.html">О нас</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+				<li><a href="admin.html">Заказы</a></li>
+				<li><a href="where.html">Гда нас найти?</a></li>
+				<li><a href="index.html">Выход</a></li>
+				<li><a href="index.html#login"><button>Вход</button></a></li>
+				<li><a href="index.html#register"><button>Регистрация</button></a></li>
+			</ul>
+		</div>
+	</footer>
+	
+</body>
+</html>

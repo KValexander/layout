@@ -6,6 +6,7 @@
 	<title>Интернет-магазин</title>
 	<link rel="stylesheet" href="style.css">
 
+	
 	<script>
 		let orders = [];
 		window.onload = function() {
@@ -16,11 +17,10 @@
 					"fio"    : 	b[0].innerHTML,
 					"status" : 	b[1].innerHTML,
 					"count"  : 	b[2].innerHTML,
-					"reason" : 	(reason = elem.querySelector("p:last-child")) ? reason.innerHTML : null,
+					"reason" : 	(reason = elem.querySelector("p.reason")) ? reason.innerHTML : null,
 					"timestamp": elem.querySelector(".text-small").innerHTML,
 				});
 			});
-			console.log(orders);
 		}
 		// Фильтрация заказов
 		function filter(param) {
@@ -34,8 +34,8 @@
 			let data = "";
 			array.forEach(order => {
 
-				if(status == "Подтверждённый") end = "";
-				else end = (status == "Новый") ? `
+				if(order.status == "Подтверждённый") end = "";
+				else end = (order.status == "Новый") ? `
 					<form class="w100">
 						<button>Подтвердить заказ</button>
 					</form>
@@ -46,7 +46,7 @@
 					</form>
 				` : `
 					<h3 class="text-center">Причина отмены:</h3>
-					<p>${ order.reason }</p>
+					<p class="reason">${ order.reason }</p>
 				`;
 				
 				data += `
@@ -160,7 +160,7 @@
 					<p>Статус заказа: <b>Отменённый</b></p>
 					<p>Количество товаров: <b>7</b></p>
 					<h3 class="text-center">Причина отмены:</h3>
-					<p>Мне не понравилось, как ты заказываешь</p>
+					<p class="reason">Мне не понравилось, как ты заказываешь</p>
 					<p class="text-small text-right">2022-12-12 12:20</p>
 				</div>
 				<div class="col text-left">
@@ -191,7 +191,7 @@
 					<p>Статус заказа: <b>Отменённый</b></p>
 					<p>Количество товаров: <b>7</b></p>
 					<h3 class="text-center">Причина отмены:</h3>
-					<p>Мне не понравилось, как ты заказываешь</p>
+					<p class="reason">Мне не понравилось, как ты заказываешь</p>
 					<p class="text-small text-right">2022-12-12 12:20</p>
 				</div>
 				<div class="col text-left">
@@ -200,7 +200,7 @@
 					<p>Статус заказа: <b>Отменённый</b></p>
 					<p>Количество товаров: <b>7</b></p>
 					<h3 class="text-center">Причина отмены:</h3>
-					<p>Мне не понравилось, как ты заказываешь</p>
+					<p class="reason">Мне не понравилось, как ты заказываешь</p>
 					<p class="text-small text-right">2022-12-12 12:20</p>
 				</div>
 				<div class="col text-left">

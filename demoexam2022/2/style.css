@@ -1,0 +1,240 @@
+* {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color:  #f3f3f3;
+	font-family:  Arial;
+	font-size: 14pt;
+}
+
+a {
+	color: black;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1,h2,h3,h4,p {
+	padding: 5px 0;
+}
+
+hr {
+	margin: 10px 0;
+	border: solid 1px black;
+}
+
+img {
+	max-width:  100%;
+	object-fit: cover;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-small {
+	font-size: 12pt;
+	color: gray;
+}
+
+div.content {
+	max-width:  1200px;
+	margin:  0 auto;
+	padding:  0 20px;
+}
+
+div.head {
+	padding:  20px 0;
+	margin-top:  40px;
+	margin-bottom:  20px;
+	border-bottom:  solid 2px black;
+	text-align: center;
+	font-size: 20pt;
+}
+
+div.wrap {
+	padding:  20px;
+	margin:  10px 0;
+	border-radius: 5px;
+	background-color: white;
+}
+
+div.row.wrap > div {
+	width: 48%;
+	line-height: 30px;
+}
+
+div.row.wrap div.image {
+	text-align: center;
+	line-height: 0px;
+}
+
+div.row.wrap img {
+	height: 300px;
+}
+
+div.row {
+	display:  flex;
+	flex-wrap:  wrap;
+	justify-content: space-between;
+}
+
+div.row div.col {
+	width: 32%;
+	padding: 20px;
+	margin: 10px 0;
+	border-radius: 5px;
+	background-color:  white;
+	border:  solid 1px rgba(0,0,0,0.3);
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+div.row div.col img {
+	width: 100%;
+	height: 250px;
+	margin-bottom: 10px;
+}
+
+div.col_line div.col {
+	width: 19%;
+	text-align:  center;
+}
+
+div.col_line div.col img {
+	height: 150px;
+}
+
+form {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+form.w100 {
+	width: 100%;
+}
+
+form div.part {
+	display: flex;
+	align-items: center;
+}
+
+form div.part input,
+form div.part select,
+form div.part button {
+	width: 50%;
+}
+
+input, select, textarea, button {
+	width: 100%;
+	height: 50px;
+	margin: 10px 0;
+	font-size: 14pt;
+	font-family: Arial;
+	padding-left: 10px;
+	border: solid 1px black;
+}
+
+input[type=file] {
+	border:  none;
+	padding:  0;
+	height: 30px;
+}
+
+input[type=checkbox] {
+	width: 20px !important;
+	height: 20px;
+	margin-right: 10px;
+}
+
+textarea {
+	padding: 10px;
+	height: 100px;
+}
+
+button {
+	padding: 0px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	background-color: black;
+}
+
+header {
+	background-color:  white;
+	border-bottom:  solid 3px black;
+}
+
+header div.top {
+	padding: 20px 0;
+	line-height: 60px;
+	display:  flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-bottom:  solid 3px black;
+}
+
+header div.top div {
+	display:  flex;
+	align-items: center;
+}
+
+header img {
+	width:  100px;
+	height:  100px;
+	margin-right:  20px;
+}
+
+header nav, footer nav {
+	display:  flex;
+	padding: 20px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav a, footer nav a {
+	width: 100%;
+	display:  block;
+	text-align: center;
+}
+
+main {
+	min-height:  calc(100vh - 264px - 61px - 90px);
+}
+
+footer {
+	margin-top: 40px;
+	background-color:  white;
+	border-top:  solid 3px black;
+}
+
+@media screen and (max-width: 720px) {
+
+	div.row div.col {
+		width: 48%;
+	}
+
+	div.col_line div.col {
+		width: 32%;
+	}
+
+	form {
+		width: 80%;
+	}
+
+}

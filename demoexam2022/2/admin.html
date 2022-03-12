@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Online store</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		
+		<div class="top">
+			<div>
+				<img src="logo/logo.png" alt="">
+				<h1>CopyStar</h1>
+			</div>
+			<h2>Девиз нашей компании!</h2>
+		</div>
+
+		<div class="content">
+			<nav>
+				<a href="index.html">О нас</a>
+				<a href="catalog.html">Каталог</a>
+				<a href="where.html">Где нас найти?</a>
+				<a href="index.html#login">Вход</a>
+				<a href="index.html#register">Регистрация</a>
+				<a href="cart.html">Корзина</a>
+				<a href="admin.html">Заказы</a>
+				<a href="index.html">Выход</a>
+			</nav>
+		</div>
+
+	</header>
+
+	<main>
+		<div class="content">
+
+			<div class="head">Категории</div>
+			
+			<form>
+				<div class="part">
+					<input type="text" placeholder="Категория" name="category" required>
+					<button>Добавить</button>
+				</div>
+			</form>
+
+			<form>
+				<div class="part">
+					<select name="category_id" required>
+						<option value selected disabled>Категории</option>
+					</select>
+					<button>Удалить</button>
+				</div>
+			</form>
+
+			<div class="head">Добавление товара</div>
+			<form>
+
+				<input type="text" placeholder="Название" name="name" required>
+
+				<input type="number" placeholder="Цена" name="price" recquired>
+
+				<input type="text" placeholder="Страна производитель" name="country" required>
+
+				<input type="number" placeholder="Год выпуска" name="year" recquired>
+
+				<input type="text" placeholder="Модель" name="model" required>
+
+				<select name="category" required>
+					<option value selected disabled>Категории</option>
+				</select>
+
+				<input type="number" placeholder="Количество на складе" name="count" required>
+
+				<p class="text-left">Фотография товара</p>
+				<input type="file" name="image" required>
+
+				<button>Добавить</button>
+
+			</form>
+
+			<div class="head">Заказы</div>
+			<p>Все | Новые | Подтверждённые | Отменённые</p>
+			<div class="row">
+				<div class="col">
+					<h3>Название заказа</h3>
+					<p>ФИО заказчика: <b>Иван Иванович Иванов</b></p>
+					<p>Количество товаров: <b>3</b></p>
+					<p>Статус: <b>Новый</b></p>
+
+					<form class="w100">
+						<button>Подтвердить</button>
+					</form>
+
+					<h3>Отменить заказ</h3>
+
+					<form class="w100">
+						<textarea name="reason" placeholder="Причина отмены" required></textarea>
+						<button>Отменить</button>
+					</form>
+				</div>
+				<div class="col">
+					<h3>Название заказа</h3>
+					<p>ФИО заказчика: <b>Иван Иванович Иванов</b></p>
+					<p>Количество товаров: <b>3</b></p>
+					<p>Статус: <b>Подтверждённый</b></p>
+				</div>
+				<div class="col">
+					<h3>Название заказа</h3>
+					<p>ФИО заказчика: <b>Иван Иванович Иванов</b></p>
+					<p>Количество товаров: <b>3</b></p>
+					<p>Статус: <b>Отменённый</b></p>
+					<p class="text-center"><b>Причина отмены</b></p>
+					<p>Причина отмены заказа такая-то</p>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="content">
+			<nav>
+				<a href="index.html">О нас</a>
+				<a href="catalog.html">Каталог</a>
+				<a href="where.html">Где нас найти?</a>
+				<a href="index.html#login">Вход</a>
+				<a href="index.html#register">Регистрация</a>
+				<a href="cart.html">Корзина</a>
+				<a href="admin.html">Заказы</a>
+				<a href="index.html">Выход</a>
+			</nav>
+		</div>
+	</footer>
+	
+</body>
+</html>
